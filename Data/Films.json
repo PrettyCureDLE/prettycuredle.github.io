@@ -1,0 +1,791 @@
+{
+    "films": [
+        {
+            "name": "Futari Wa Pretty Cure Max Heart",
+            "characters": [
+                1,
+                2,
+                3
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Futari Wa Pretty Cure Max Heart 2: Yukizora no Tomodachi",
+            "characters": [
+                1,
+                2,
+                3
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Futari Wa Pretty Cure Splash Star: Tick-Tock Crisis",
+            "characters": [
+                4,
+                5
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Yes! PreCure 5 the Movie: Great Miraculous Adventure in the Mirror Kingdom!",
+            "characters": [
+                6,
+                7,
+                8,
+                9,
+                10
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Yes! PreCure 5 GoGo! the Movie: Happy Birthday in the Sweets Kingdom",
+            "characters": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Fresh PreCure! the Movie: The Toy Kingdom Has Lots of Secrets!?",
+            "characters": [
+                12,
+                13,
+                14,
+                15
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "HeartCatch PreCure! the Movie: Fashion Show in the Flower Capital",
+            "characters": [
+                16,
+                17,
+                18,
+                19
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Suite PreCure the Movie: Take It Back! The Miraculous Melody That Connects Hearts",
+            "characters": [
+                20,
+                21,
+                22,
+                23
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Smile PreCure! the Movie: Big Mismatch in a Picture Book!",
+            "characters": [
+                24,
+                25,
+                26,
+                27,
+                28
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "DokiDoki! PreCure the Movie: Mana's Getting Married!!?",
+            "characters": [
+                29,
+                30,
+                31,
+                32,
+                33
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "HappinessCharge PreCure! the Movie: The Ballerina of the Land of Dolls",
+            "characters": [
+                34,
+                35,
+                36,
+                37,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100,
+                101,
+                102
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Go! Princess PreCure the Movie: Go! Go!! Gorgeous Triple Feature!!!",
+            "characters": [
+                38,
+                39,
+                40,
+                41
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Witchy PreCure! the Movie: Wonderous! Cure Mofurun!",
+            "characters": [
+                42,
+                43,
+                44
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Kirakira☆PreCure A La Mode the Movie: Crisply! The Memory of Mille-feuille!",
+            "characters": [
+                45,
+                46,
+                47,
+                48,
+                49,
+                50
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Hugtto! PreCure the Movie: Futari wa Pretty Cure All Stars Memories",
+            "characters": [
+                51,
+                52,
+                53,
+                54,
+                55
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Star☆Twinkle PreCure the Movie: These Feelings Within the Song of Stars",
+            "characters": [
+                56,
+                57,
+                58,
+                59,
+                60
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Healin' Good PreCure the Movie: GoGo! Big Transformation! The Town of Dreams",
+            "characters": [
+                61,
+                62,
+                63,
+                64
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Tropical-Rouge! PreCure the Movie: The Snow Princess and the Miraculous Ring!",
+            "characters": [
+                65,
+                66,
+                67,
+                68,
+                69
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Delicious Party♡PreCure the Movie: Dreaming Children's Lunch!",
+            "characters": [
+                70,
+                71,
+                72,
+                73
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Hirogaru Sky! PreCure the Movie: A Grand Adventure in a Thrilling Game World!",
+            "characters": [
+                74,
+                75,
+                76,
+                77,
+                78
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Wonderful PreCure! the Movie: A Grand Adventure in a Thrilling Game World!",
+            "characters": [
+                79,
+                80,
+                81,
+                82
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "You and Idol PreCure the Movie: For You! Our Kirakilala Concert!",
+            "characters": [
+                83,
+                84,
+                85,
+                86,
+                87
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Star Detective Precure! the Movie",
+            "characters": [
+                88,
+                89,
+                90,
+                91
+            ],
+            "type": "Season"
+        },
+        {
+            "name": "Pretty Cure All Stars DX: Everyone's Friends - the Collection of Miracles!",
+            "characters": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+            ],
+            "type": "All Star"
+        },
+        {
+            "name": "Pretty Cure All Stars DX2: Light of Hope - Protect the Rainbow Jewel!",
+            "characters": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                16,
+                17
+            ],
+            "type": "All Star"
+        },
+        {
+            "name": "Pretty Cure All Stars DX3: Deliver the Future! The Rainbow-Colored Flower That Connects the World",
+            "characters": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                16,
+                17,
+                20,
+                21
+            ],
+            "type": "All Star"
+        },
+        {
+            "name": "Pretty Cure All Stars New Stage: Friends of the Future",
+            "characters": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28
+            ],
+            "type": "All Star"
+        },
+        {
+            "name": "Pretty Cure All Stars New Stage 2: Friends of the Heart",
+            "characters": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32
+            ],
+            "type": "All Star"
+        },
+        {
+            "name": "Pretty Cure All Stars New Stage 3: Eternal Friends",
+            "characters": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36
+            ],
+            "type": "All Star"
+        },
+        {
+            "name": "Pretty Cure All Stars: Spring Carnival♪",
+            "characters": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                38,
+                39,
+                40
+            ],
+            "type": "All Star"
+        },
+        {
+            "name": "Pretty Cure All Stars: Singing with Everyone♪ Miraculous Magic!",
+            "characters": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43
+            ],
+            "type": "All Star"
+        },
+        {
+            "name": "Pretty Cure Dream Stars!",
+            "characters": [
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49
+            ],
+            "type": "All Star"
+        },
+        {
+            "name": "Pretty Cure Super Stars!",
+            "characters": [
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53
+            ],
+            "type": "All Star"
+        },
+        {
+            "name": "HUGtto! Pretty Cure♡Futari wa Pretty Cure: All Stars Memories",
+            "characters": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55
+            ],
+            "type": "All Star"
+        },
+        {
+            "name": "Pretty Cure Miracle Universe",
+            "characters": [
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59
+            ],
+            "type": "All Star"
+        },
+        {
+            "name": "Pretty Cure Miracle Leap: A Wonderful Day with Everyone",
+            "characters": [
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69
+            ],
+            "type": "All Star"
+        },
+        {
+            "name": "Pretty Cure All Stars F",
+            "characters": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78
+            ],
+            "type": "All Star"
+        },
+        {
+            "name": "Wonderful Pretty Cure! The Movie! Doki Doki♡Game no Sekai de Daibouken!",
+            "characters": [
+                42,
+                43,
+                44,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82
+            ],
+            "type": "All Star"
+        },
+        {
+            "name": "You and Idol Pretty Cure♪ the Movie: For You! Our Kirakilala Concert!",
+            "characters": [
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87
+            ],
+            "type": "All Star"
+        }
+    ]
+}

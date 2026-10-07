@@ -1,0 +1,1541 @@
+{
+    "characters": [
+        {
+            "id": 1,
+            "name": "Misumi Nagisa",
+            "cure_name": "Cure Black",
+            "categories": {
+                "season": [
+                    "Futari Wa PreCure",
+                    "Futari Wa PreCure Max Heart"
+                ],
+                "generation": 1,
+                "cure_hair_color": "orange",
+                "cure_main_color": "black",
+                "cure_eyes_color": "brown"
+            },
+            "image": "Black.png"
+        },
+        {
+            "id": 2,
+            "name": "Yukishiro Honoka",
+            "cure_name": "Cure White",
+            "categories": {
+                "season": [
+                    "Futari Wa PreCure",
+                    "Futari Wa PreCure Max Heart"
+                ],
+                "generation": 1,
+                "cure_hair_color": "blue",
+                "cure_main_color": "white",
+                "cure_eyes_color": "blue"
+            },
+            "image": "White.png"
+        },
+        {
+            "id": 3,
+            "name": "Kujou Hikari",
+            "cure_name": "Shiny Luminous",
+            "categories": {
+                "season": [
+                    "Futari Wa PreCure Max Heart"
+                ],
+                "generation": 1,
+                "cure_hair_color": "yellow",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "yellow"
+            },
+            "image": "Luminous.png"
+        },
+        {
+            "id": 4,
+            "name": "Hyuuga Saki",
+            "cure_name": "Cure Bloom",
+            "categories": {
+                "season": [
+                    "Futari Wa PreCure Splash Star"
+                ],
+                "generation": 2,
+                "cure_hair_color": "Orange",
+                "cure_main_color": "Pink",
+                "cure_eyes_color": "Orange"
+            },
+            "image": "Bloom.png"
+        },
+        {
+            "id": 5,
+            "name": "Mishou Mai",
+            "cure_name": "Cure Egret",
+            "categories": {
+                "season": [
+                    "Futari Wa PreCure Splash Star"
+                ],
+                "generation": 2,
+                "cure_hair_color": "Violet",
+                "cure_main_color": "White",
+                "cure_eyes_color": "Violet"
+            },
+            "image": "Egret.png"
+        },
+        {
+            "id": 6,
+            "name": "Yumehara Nozomi",
+            "cure_name": "Cure Dream",
+            "categories": {
+                "season": [
+                    "Yes! PreCure 5",
+                    "Yes! PreCure 5 GoGo"
+                ],
+                "generation": 3,
+                "cure_hair_color": "Pink",
+                "cure_main_color": "Pink",
+                "cure_eyes_color": "Pink"
+            },
+            "image": "Dream.png"
+        },
+        {
+            "id": 7,
+            "name": "Natsuki Rin",
+            "cure_name": "Cure Rouge",
+            "categories": {
+                "season": [
+                    "Yes! PreCure 5",
+                    "Yes! PreCure 5 GoGo"
+                ],
+                "generation": 3,
+                "cure_hair_color": "orange",
+                "cure_main_color": "red",
+                "cure_eyes_color": "red"
+            },
+            "image": "Rouge.png"
+        },
+        {
+            "id": 8,
+            "name": "Kasugano Urara",
+            "cure_name": "Cure Lemonade",
+            "categories": {
+                "season": [
+                    "Yes! PreCure 5",
+                    "Yes! PreCure 5 GoGo"
+                ],
+                "generation": 3,
+                "cure_hair_color": "yellow",
+                "cure_main_color": "yellow",
+                "cure_eyes_color": "orange"
+            },
+            "image": "Lemonade.png"
+        },
+        {
+            "id": 9,
+            "name": "Akimoto Komachi",
+            "cure_name": "Cure Mint",
+            "categories": {
+                "season": [
+                    "Yes! PreCure 5",
+                    "Yes! PreCure 5 GoGo"
+                ],
+                "generation": 3,
+                "cure_hair_color": "green",
+                "cure_main_color": "green",
+                "cure_eyes_color": "green"
+            },
+            "image": "Mint.png"
+        },
+        {
+            "id": 10,
+            "name": "Minazuki Karen",
+            "cure_name": "Cure Aqua",
+            "categories": {
+                "season": [
+                    "Yes! PreCure 5",
+                    "Yes! PreCure 5 GoGo"
+                ],
+                "generation": 3,
+                "cure_hair_color": "blue",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Aqua.png"
+        },
+        {
+            "id": 11,
+            "name": "Mimino Kurumi",
+            "cure_name": "Milky Rose",
+            "categories": {
+                "season": [
+                    "Yes! PreCure 5 GoGo"
+                ],
+                "generation": 3,
+                "cure_hair_color": "violet",
+                "cure_main_color": "purple",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Milky.png"
+        },
+        {
+            "id": 12,
+            "name": "Momozono Love",
+            "cure_name": "Cure Peach",
+            "categories": {
+                "season": [
+                    "Fresh PreCure!"
+                ],
+                "generation": 4,
+                "cure_hair_color": "pink",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Peach.png"
+        },
+        {
+            "id": 13,
+            "name": "Aono Miki",
+            "cure_name": "Cure Berry",
+            "categories": {
+                "season": [
+                    "Fresh PreCure!"
+                ],
+                "generation": 4,
+                "cure_hair_color": "blue",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Berry.png"
+        },
+        {
+            "id": 14,
+            "name": "Yamabuki Inori",
+            "cure_name": "Cure Pine",
+            "categories": {
+                "season": [
+                    "Fresh PreCure!"
+                ],
+                "generation": 4,
+                "cure_hair_color": "yellow",
+                "cure_main_color": "yellow",
+                "cure_eyes_color": "green"
+            },
+            "image": "Pine.png"
+        },
+        {
+            "id": 15,
+            "name": "Higashi Setsuna",
+            "cure_name": "Cure Passion",
+            "categories": {
+                "season": [
+                    "Fresh PreCure!"
+                ],
+                "generation": 4,
+                "cure_hair_color": "red",
+                "cure_main_color": "red",
+                "cure_eyes_color": "red"
+            },
+            "image": "Passion.png"
+        },
+        {
+            "id": 16,
+            "name": "Hanasaki Tsubomi",
+            "cure_name": "Cure Blossom",
+            "categories": {
+                "season": [
+                    "HeartCatch PreCure!"
+                ],
+                "generation": 5,
+                "cure_hair_color": "pink",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Blossom.png"
+        },
+        {
+            "id": 17,
+            "name": "Kurumi Erika",
+            "cure_name": "Cure Marine",
+            "categories": {
+                "season": [
+                    "HeartCatch PreCure!"
+                ],
+                "generation": 5,
+                "cure_hair_color": "blue",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Marine.png"
+        },
+        {
+            "id": 18,
+            "name": "Myoudouin Itsuki",
+            "cure_name": "Cure Sunshine",
+            "categories": {
+                "season": [
+                    "HeartCatch PreCure!"
+                ],
+                "generation": 5,
+                "cure_hair_color": "yellow",
+                "cure_main_color": "yellow",
+                "cure_eyes_color": "brown"
+            },
+            "image": "Sunshine.png"
+        },
+        {
+            "id": 19,
+            "name": "Tsukikage Yuri",
+            "cure_name": "Cure Moonlight",
+            "categories": {
+                "season": [
+                    "HeartCatch PreCure!"
+                ],
+                "generation": 5,
+                "cure_hair_color": "violet",
+                "cure_main_color": "purple",
+                "cure_eyes_color": "purple"
+            },
+            "image": "Moonlight.png"
+        },
+        {
+            "id": 20,
+            "name": "Houjou Hibiki",
+            "cure_name": "Cure Melody",
+            "categories": {
+                "season": [
+                    "Suite PreCure♪"
+                ],
+                "generation": 6,
+                "cure_hair_color": "red",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "red"
+            },
+            "image": "Melody.png"
+        },
+        {
+            "id": 21,
+            "name": "Minamino Kanade",
+            "cure_name": "Cure Rhythm",
+            "categories": {
+                "season": [
+                    "Suite PreCure♪"
+                ],
+                "generation": 6,
+                "cure_hair_color": "orange",
+                "cure_main_color": "white",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Rhythm.png"
+        },
+        {
+            "id": 22,
+            "name": "Kurokawa Ellen",
+            "cure_name": "Cure Beat",
+            "categories": {
+                "season": [
+                    "Suite PreCure♪"
+                ],
+                "generation": 6,
+                "cure_hair_color": "blue",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Beat.png"
+        },
+        {
+            "id": 23,
+            "name": "Shirabe Ako",
+            "cure_name": "Cure Muse",
+            "categories": {
+                "season": [
+                    "Suite PreCure♪"
+                ],
+                "generation": 6,
+                "cure_hair_color": "yellow",
+                "cure_main_color": "yellow",
+                "cure_eyes_color": "red"
+            },
+            "image": "Muse.png"
+        },
+        {
+            "id": 24,
+            "name": "Hoshizora Miyuki",
+            "cure_name": "Cure Happy",
+            "categories": {
+                "season": [
+                    "Smile PreCure!"
+                ],
+                "generation": 7,
+                "cure_hair_color": "pink",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Happy.png"
+        },
+        {
+            "id": 25,
+            "name": "Hino Akane",
+            "cure_name": "Cure Sunny",
+            "categories": {
+                "season": [
+                    "Smile PreCure!"
+                ],
+                "generation": 7,
+                "cure_hair_color": "orange",
+                "cure_main_color": "orange",
+                "cure_eyes_color": "red"
+            },
+            "image": "Sunny.png"
+        },
+        {
+            "id": 26,
+            "name": "Kise Yayoi",
+            "cure_name": "Cure Peace",
+            "categories": {
+                "season": [
+                    "Smile PreCure!"
+                ],
+                "generation": 7,
+                "cure_hair_color": "yellow",
+                "cure_main_color": "yellow",
+                "cure_eyes_color": "green"
+            },
+            "image": "Peace.png"
+        },
+        {
+            "id": 27,
+            "name": "Midorikawa Nao",
+            "cure_name": "Cure March",
+            "categories": {
+                "season": [
+                    "Smile PreCure!"
+                ],
+                "generation": 7,
+                "cure_hair_color": "green",
+                "cure_main_color": "green",
+                "cure_eyes_color": "green"
+            },
+            "image": "March.png"
+        },
+        {
+            "id": 28,
+            "name": "Aoki Reika",
+            "cure_name": "Cure Beauty",
+            "categories": {
+                "season": [
+                    "Smile PreCure!"
+                ],
+                "generation": 7,
+                "cure_hair_color": "blue",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Beauty.png"
+        },
+        {
+            "id": 29,
+            "name": "Aida Mana",
+            "cure_name": "Cure Heart",
+            "categories": {
+                "season": [
+                    "DokiDoki! PreCure"
+                ],
+                "generation": 8,
+                "cure_hair_color": "pink",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Heart.png"
+        },
+        {
+            "id": 30,
+            "name": "Hishikawa Rikka",
+            "cure_name": "Cure Diamond",
+            "categories": {
+                "season": [
+                    "DokiDoki! PreCure"
+                ],
+                "generation": 8,
+                "cure_hair_color": "blue",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Diamond.png"
+        },
+        {
+            "id": 31,
+            "name": "Yotsuba Alice",
+            "cure_name": "Cure Rosetta",
+            "categories": {
+                "season": [
+                    "DokiDoki! PreCure"
+                ],
+                "generation": 8,
+                "cure_hair_color": "yellow",
+                "cure_main_color": "yellow",
+                "cure_eyes_color": "green"
+            },
+            "image": "Rosetta.png"
+        },
+        {
+            "id": 32,
+            "name": "Kenzaki Makoto",
+            "cure_name": "Cure Sword",
+            "categories": {
+                "season": [
+                    "DokiDoki! PreCure"
+                ],
+                "generation": 8,
+                "cure_hair_color": "purple",
+                "cure_main_color": "purple",
+                "cure_eyes_color": "purple"
+            },
+            "image": "Sword.png"
+        },
+        {
+            "id": 33,
+            "name": "Madoka Aguri",
+            "cure_name": "Cure Ace",
+            "categories": {
+                "season": [
+                    "DokiDoki! PreCure"
+                ],
+                "generation": 8,
+                "cure_hair_color": "red",
+                "cure_main_color": "red",
+                "cure_eyes_color": "red"
+            },
+            "image": "Ace.png"
+        },
+        {
+            "id": 34,
+            "name": "Aino Megumi",
+            "cure_name": "Cure Lovely",
+            "categories": {
+                "season": [
+                    "HappinessCharge PreCure!"
+                ],
+                "generation": 9,
+                "cure_hair_color": "pink",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Lovely.png"
+        },
+        {
+            "id": 35,
+            "name": "Shirayuki Hime",
+            "cure_name": "Cure Princess",
+            "categories": {
+                "season": [
+                    "HappinessCharge PreCure!"
+                ],
+                "generation": 9,
+                "cure_hair_color": "blue",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Princess.png"
+        },
+        {
+            "id": 36,
+            "name": "Omori Yuko",
+            "cure_name": "Cure Honey",
+            "categories": {
+                "season": [
+                    "HappinessCharge PreCure!"
+                ],
+                "generation": 9,
+                "cure_hair_color": "yellow",
+                "cure_main_color": "yellow",
+                "cure_eyes_color": "brown"
+            },
+            "image": "Honey.png"
+        },
+        {
+            "id": 37,
+            "name": "Hikawa Iona",
+            "cure_name": "Cure Fortune",
+            "categories": {
+                "season": [
+                    "HappinessCharge PreCure!"
+                ],
+                "generation": 9,
+                "cure_hair_color": "purple",
+                "cure_main_color": "purple",
+                "cure_eyes_color": "purple"
+            },
+            "image": "Fortune.png"
+        },
+        {
+            "id": 38,
+            "name": "Haruno Haruka",
+            "cure_name": "Cure Flora",
+            "categories": {
+                "season": [
+                    "Go! Princess PreCure"
+                ],
+                "generation": 10,
+                "cure_hair_color": "pink",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Flora.png"
+        },
+        {
+            "id": 39,
+            "name": "Kaido Minami",
+            "cure_name": "Cure Mermaid",
+            "categories": {
+                "season": [
+                    "Go! Princess PreCure"
+                ],
+                "generation": 10,
+                "cure_hair_color": "blue",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Mermaid.png"
+        },
+        {
+            "id": 40,
+            "name": "Amanogawa Kirara",
+            "cure_name": "Cure Twinkle",
+            "categories": {
+                "season": [
+                    "Go! Princess PreCure"
+                ],
+                "generation": 10,
+                "cure_hair_color": "yellow",
+                "cure_main_color": "yellow",
+                "cure_eyes_color": "brown"
+            },
+            "image": "Twinkle.png"
+        },
+        {
+            "id": 41,
+            "name": "Akagi Towa",
+            "cure_name": "Cure Scarlet",
+            "categories": {
+                "season": [
+                    "Go! Princess PreCure"
+                ],
+                "generation": 10,
+                "cure_hair_color": "red",
+                "cure_main_color": "red",
+                "cure_eyes_color": "red"
+            },
+            "image": "Scarlet.png"
+        },
+        {
+            "id": 42,
+            "name": "Asahina Mirai",
+            "cure_name": "Cure Miracle",
+            "categories": {
+                "season": [
+                    "Maho Girls PreCure!"
+                ],
+                "generation": 11,
+                "cure_hair_color": "pink",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "brown"
+            },
+            "image": "Miracle.png"
+        },
+        {
+            "id": 43,
+            "name": "Izayoi Riko",
+            "cure_name": "Cure Magical",
+            "categories": {
+                "season": [
+                    "Maho Girls PreCure!"
+                ],
+                "generation": 11,
+                "cure_hair_color": "purple",
+                "cure_main_color": "purple",
+                "cure_eyes_color": "red"
+            },
+            "image": "Magical.png"
+        },
+        {
+            "id": 44,
+            "name": "Hanami Kotoha",
+            "cure_name": "Cure Felice",
+            "categories": {
+                "season": [
+                    "Maho Girls PreCure!"
+                ],
+                "generation": 11,
+                "cure_hair_color": "green",
+                "cure_main_color": "green",
+                "cure_eyes_color": "green"
+            },
+            "image": "Felice.png"
+        },
+        {
+            "id": 45,
+            "name": "Usami Ichika",
+            "cure_name": "Cure Whip",
+            "categories": {
+                "season": [
+                    "KiraKira☆PreCure A La Mode"
+                ],
+                "generation": 12,
+                "cure_hair_color": "pink",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Whip.png"
+        },
+        {
+            "id": 46,
+            "name": "Arisugawa Himari",
+            "cure_name": "Cure Custard",
+            "categories": {
+                "season": [
+                    "KiraKira☆PreCure A La Mode"
+                ],
+                "generation": 12,
+                "cure_hair_color": "yellow",
+                "cure_main_color": "yellow",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Custard.png"
+        },
+        {
+            "id": 47,
+            "name": "Tategami Aoi",
+            "cure_name": "Cure Gelato",
+            "categories": {
+                "season": [
+                    "KiraKira☆PreCure A La Mode"
+                ],
+                "generation": 12,
+                "cure_hair_color": "blue",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Gelato.png"
+        },
+        {
+            "id": 48,
+            "name": "Kotozume Yukari",
+            "cure_name": "Cure Macaron",
+            "categories": {
+                "season": [
+                    "KiraKira☆PreCure A La Mode"
+                ],
+                "generation": 12,
+                "cure_hair_color": "purple",
+                "cure_main_color": "purple",
+                "cure_eyes_color": "purple"
+            },
+            "image": "Macaron.png"
+        },
+        {
+            "id": 49,
+            "name": "Kenjou Akira",
+            "cure_name": "Cure Chocolat",
+            "categories": {
+                "season": [
+                    "KiraKira☆PreCure A La Mode"
+                ],
+                "generation": 12,
+                "cure_hair_color": "red",
+                "cure_main_color": "red",
+                "cure_eyes_color": "red"
+            },
+            "image": "Chocolat.png"
+        },
+        {
+            "id": 50,
+            "name": "Kirahoshi Ciel",
+            "cure_name": "Cure Parfait",
+            "categories": {
+                "season": [
+                    "KiraKira☆PreCure A La Mode"
+                ],
+                "generation": 12,
+                "cure_hair_color": "blue",
+                "cure_main_color": "cyan",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Parfait.png"
+        },
+        {
+            "id": 51,
+            "name": "Nono Hana",
+            "cure_name": "Cure Yell",
+            "categories": {
+                "season": [
+                    "Hugtto! PreCure"
+                ],
+                "generation": 13,
+                "cure_hair_color": "pink",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Yell.png"
+        },
+        {
+            "id": 52,
+            "name": "Yakushiji Saaya",
+            "cure_name": "Cure Ange",
+            "categories": {
+                "season": [
+                    "Hugtto! PreCure"
+                ],
+                "generation": 13,
+                "cure_hair_color": "blue",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Ange.png"
+        },
+        {
+            "id": 53,
+            "name": "Kagayaki Homare",
+            "cure_name": "Cure Étoile",
+            "categories": {
+                "season": [
+                    "Hugtto! PreCure"
+                ],
+                "generation": 13,
+                "cure_hair_color": "yellow",
+                "cure_main_color": "yellow",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Etoile.png"
+        },
+        {
+            "id": 54,
+            "name": "Aisaki Emiru",
+            "cure_name": "Cure Macherie",
+            "categories": {
+                "season": [
+                    "Hugtto! PreCure"
+                ],
+                "generation": 13,
+                "cure_hair_color": "red",
+                "cure_main_color": "red",
+                "cure_eyes_color": "pink"
+            },
+            "image": "Macherie.png"
+        },
+        {
+            "id": 55,
+            "name": "Ruru Amour",
+            "cure_name": "Cure Amour",
+            "categories": {
+                "season": [
+                    "Hugtto! PreCure"
+                ],
+                "generation": 13,
+                "cure_hair_color": "purple",
+                "cure_main_color": "purple",
+                "cure_eyes_color": "purple"
+            },
+            "image": "Amour.png"
+        },
+        {
+            "id": 56,
+            "name": "Hoshina Hikaru",
+            "cure_name": "Cure Star",
+            "categories": {
+                "season": [
+                    "Star☆Twinkle PreCure"
+                ],
+                "generation": 14,
+                "cure_hair_color": "pink",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "pink"
+            },
+            "image": "Star.png"
+        },
+        {
+            "id": 57,
+            "name": "Hagoromo Lala",
+            "cure_name": "Cure Milky",
+            "categories": {
+                "season": [
+                    "Star☆Twinkle PreCure"
+                ],
+                "generation": 14,
+                "cure_hair_color": "green",
+                "cure_main_color": "green",
+                "cure_eyes_color": "green"
+            },
+            "image": "Milky.png"
+        },
+        {
+            "id": 58,
+            "name": "Amamiya Elena",
+            "cure_name": "Cure Soleil",
+            "categories": {
+                "season": [
+                    "Star☆Twinkle PreCure"
+                ],
+                "generation": 14,
+                "cure_hair_color": "yellow",
+                "cure_main_color": "yellow",
+                "cure_eyes_color": "brown"
+            },
+            "image": "Soleil.png"
+        },
+        {
+            "id": 59,
+            "name": "Kaguya Madoka",
+            "cure_name": "Cure Selene",
+            "categories": {
+                "season": [
+                    "Star☆Twinkle PreCure"
+                ],
+                "generation": 14,
+                "cure_hair_color": "purple",
+                "cure_main_color": "purple",
+                "cure_eyes_color": "purple"
+            },
+            "image": "Selene.png"
+        },
+        {
+            "id": 60,
+            "name": "Yuni",
+            "cure_name": "Cure Cosmo",
+            "categories": {
+                "season": [
+                    "Star☆Twinkle PreCure"
+                ],
+                "generation": 14,
+                "cure_hair_color": "blue",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Cosmo.png"
+        },
+        {
+            "id": 61,
+            "name": "Hanadera Nodoka",
+            "cure_name": "Cure Grace",
+            "categories": {
+                "season": [
+                    "Healin' Good♡PreCure"
+                ],
+                "generation": 15,
+                "cure_hair_color": "pink",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "pink"
+            },
+            "image": "Grace.png"
+        },
+        {
+            "id": 62,
+            "name": "Sawaizumi Chiyu",
+            "cure_name": "Cure Fontaine",
+            "categories": {
+                "season": [
+                    "Healin' Good♡PreCure"
+                ],
+                "generation": 15,
+                "cure_hair_color": "blue",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Fontaine.png"
+        },
+        {
+            "id": 63,
+            "name": "Hiramitsu Hinata",
+            "cure_name": "Cure Sparkle",
+            "categories": {
+                "season": [
+                    "Healin' Good♡PreCure"
+                ],
+                "generation": 15,
+                "cure_hair_color": "yellow",
+                "cure_main_color": "yellow",
+                "cure_eyes_color": "yellow"
+            },
+            "image": "Sparkle.png"
+        },
+        {
+            "id": 64,
+            "name": "Fuurin Asumi",
+            "cure_name": "Cure Earth",
+            "categories": {
+                "season": [
+                    "Healin' Good♡PreCure"
+                ],
+                "generation": 15,
+                "cure_hair_color": "purple",
+                "cure_main_color": "purple",
+                "cure_eyes_color": "purple"
+            },
+            "image": "Earth.png"
+        },
+        {
+            "id": 65,
+            "name": "Natsuumi Manatsu",
+            "cure_name": "Cure Summer",
+            "categories": {
+                "season": [
+                    "Tropical-Rouge! PreCure"
+                ],
+                "generation": 16,
+                "cure_hair_color": "pink",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Summer.png"
+        },
+        {
+            "id": 66,
+            "name": "Suzumura Sango",
+            "cure_name": "Cure Coral",
+            "categories": {
+                "season": [
+                    "Tropical-Rouge! PreCure"
+                ],
+                "generation": 16,
+                "cure_hair_color": "purple",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "purple"
+            },
+            "image": "Coral.png"
+        },
+        {
+            "id": 67,
+            "name": "Ichinose Minori",
+            "cure_name": "Cure Papaya",
+            "categories": {
+                "season": [
+                    "Tropical-Rouge! PreCure"
+                ],
+                "generation": 16,
+                "cure_hair_color": "yellow",
+                "cure_main_color": "yellow",
+                "cure_eyes_color": "green"
+            },
+            "image": "Papaya.png"
+        },
+        {
+            "id": 68,
+            "name": "Takizawa Asuka",
+            "cure_name": "Cure Flamingo",
+            "categories": {
+                "season": [
+                    "Tropical-Rouge! PreCure"
+                ],
+                "generation": 16,
+                "cure_hair_color": "red",
+                "cure_main_color": "red",
+                "cure_eyes_color": "red"
+            },
+            "image": "Flamingo.png"
+        },
+        {
+            "id": 69,
+            "name": "Laura La Mer",
+            "cure_name": "Cure La Mer",
+            "categories": {
+                "season": [
+                    "Tropical-Rouge! PreCure"
+                ],
+                "generation": 16,
+                "cure_hair_color": "blue",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "blue"
+            },
+            "image": "LaMer.png"
+        },
+        {
+            "id": 70,
+            "name": "Nagomi Yui",
+            "cure_name": "Cure Precious",
+            "categories": {
+                "season": [
+                    "Delicious Party♡Precure"
+                ],
+                "generation": 17,
+                "cure_hair_color": "pink",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "brown"
+            },
+            "image": "Precious.png"
+        },
+        {
+            "id": 71,
+            "name": "Fuwa Kokone",
+            "cure_name": "Cure Spicy",
+            "categories": {
+                "season": [
+                    "Delicious Party♡Precure"
+                ],
+                "generation": 17,
+                "cure_hair_color": "blue",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Spicy.png"
+        },
+        {
+            "id": 72,
+            "name": "Hanami Ran",
+            "cure_name": "Cure Yum-Yum",
+            "categories": {
+                "season": [
+                    "Delicious Party♡Precure"
+                ],
+                "generation": 17,
+                "cure_hair_color": "yellow",
+                "cure_main_color": "yellow",
+                "cure_eyes_color": "green"
+            },
+            "image": "Yum-Yum.png"
+        },
+        {
+            "id": 73,
+            "name": "Kasai Amane",
+            "cure_name": "Cure Finale",
+            "categories": {
+                "season": [
+                    "Delicious Party♡Precure"
+                ],
+                "generation": 17,
+                "cure_hair_color": "purple",
+                "cure_main_color": "yellow",
+                "cure_eyes_color": "purple"
+            },
+            "image": "Finale.png"
+        },
+        {
+            "id": 74,
+            "name": "Sora Harewataru",
+            "cure_name": "Cure Sky",
+            "categories": {
+                "season": [
+                    "Hirogaru Sky! PreCure"
+                ],
+                "generation": 18,
+                "cure_hair_color": "blue",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Sky.png"
+        },
+        {
+            "id": 75,
+            "name": "Nijigaoka Mashiro",
+            "cure_name": "Cure Prism",
+            "categories": {
+                "season": [
+                    "Hirogaru Sky! PreCure"
+                ],
+                "generation": 18,
+                "cure_hair_color": "pink",
+                "cure_main_color": "white",
+                "cure_eyes_color": "pink"
+            },
+            "image": "Prism.png"
+        },
+        {
+            "id": 76,
+            "name": "Yuunagi Tsubasa",
+            "cure_name": "Cure Wing",
+            "categories": {
+                "season": [
+                    "Hirogaru Sky! PreCure"
+                ],
+                "generation": 18,
+                "cure_hair_color": "orange",
+                "cure_main_color": "orange",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Wing.png"
+        },
+        {
+            "id": 77,
+            "name": "Hijiri Ageha",
+            "cure_name": "Cure Butterfly",
+            "categories": {
+                "season": [
+                    "Hirogaru Sky! PreCure"
+                ],
+                "generation": 18,
+                "cure_hair_color": "yellow",
+                "cure_main_color": "yellow",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Butterfly.png"
+        },
+        {
+            "id": 78,
+            "name": "Ellee",
+            "cure_name": "Cure Majesty",
+            "categories": {
+                "season": [
+                    "Hirogaru Sky! PreCure"
+                ],
+                "generation": 18,
+                "cure_hair_color": "purple",
+                "cure_main_color": "purple",
+                "cure_eyes_color": "purple"
+            },
+            "image": "Majesty.png"
+        },
+        {
+            "id": 79,
+            "name": "Inukai Komugi",
+            "cure_name": "Cure Wonderful",
+            "categories": {
+                "season": [
+                    "Wonderful Precure!"
+                ],
+                "generation": 19,
+                "cure_hair_color": "pink",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "pink"
+            },
+            "image": "Wonderful.png"
+        },
+        {
+            "id": 80,
+            "name": "Inukai Iroha",
+            "cure_name": "Cure Friendy",
+            "categories": {
+                "season": [
+                    "Wonderful Precure!"
+                ],
+                "generation": 19,
+                "cure_hair_color": "pink",
+                "cure_main_color": "white",
+                "cure_eyes_color": "pink"
+            },
+            "image": "Friendy.png"
+        },
+        {
+            "id": 81,
+            "name": "Nekoyashiki Yuki",
+            "cure_name": "Cure Nyammy",
+            "categories": {
+                "season": [
+                    "Wonderful Precure!"
+                ],
+                "generation": 19,
+                "cure_hair_color": "white",
+                "cure_main_color": "white",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Nyammy.png"
+        },
+        {
+            "id": 82,
+            "name": "Nekoyashiki Mayu",
+            "cure_name": "Cure Lillian",
+            "categories": {
+                "season": [
+                    "Wonderful Precure!"
+                ],
+                "generation": 19,
+                "cure_hair_color": "purple",
+                "cure_main_color": "green",
+                "cure_eyes_color": "purple"
+            },
+            "image": "Lillian.png"
+        },
+        {
+            "id": 83,
+            "name": "Sakura Uta",
+            "cure_name": "Cure Idol",
+            "categories": {
+                "season": [
+                    "You and Idol Precure♪"
+                ],
+                "generation": 20,
+                "cure_hair_color": "pink",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "teal"
+            },
+            "image": "Idol.png"
+        },
+        {
+            "id": 84,
+            "name": "Aokaze Nana",
+            "cure_name": "Cure Wink",
+            "categories": {
+                "season": [
+                    "You and Idol Precure♪"
+                ],
+                "generation": 20,
+                "cure_hair_color": "blue",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "purple"
+            },
+            "image": "Wink.png"
+        },
+        {
+            "id": 85,
+            "name": "Shigure Kokoro",
+            "cure_name": "Cure Kyun-Kyun",
+            "categories": {
+                "season": [
+                    "You and Idol Precure♪"
+                ],
+                "generation": 20,
+                "cure_hair_color": "purple",
+                "cure_main_color": "purple",
+                "cure_eyes_color": "gold"
+            },
+            "image": "KyunKyun.png"
+        },
+        {
+            "id": 86,
+            "name": "Purirun",
+            "cure_name": "Cure Zukyoon",
+            "categories": {
+                "season": [
+                    "You and Idol Precure♪"
+                ],
+                "generation": 20,
+                "cure_hair_color": "blue",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "pink"
+            },
+            "image": "Zukyoon.png"
+        },
+        {
+            "id": 87,
+            "name": "Meroron",
+            "cure_name": "Cure Kiss",
+            "categories": {
+                "season": [
+                    "You and Idol Precure♪"
+                ],
+                "generation": 20,
+                "cure_hair_color": "pink",
+                "cure_main_color": "black",
+                "cure_eyes_color": "red"
+            },
+            "image": "Kiss.png"
+        },
+        {
+            "id": 88,
+            "name": "Akechi Anna",
+            "cure_name": "Cure Answer",
+            "categories": {
+                "season": [
+                    "Star Detective Precure!"
+                ],
+                "generation": 21,
+                "cure_hair_color": "purple",
+                "cure_main_color": "purple",
+                "cure_eyes_color": "purple"
+            },
+            "image": "Answer.png"
+        },
+        {
+            "id": 89,
+            "name": "Kobayashi Mikuru",
+            "cure_name": "Cure Mystique",
+            "categories": {
+                "season": [
+                    "Star Detective Precure!"
+                ],
+                "generation": 21,
+                "cure_hair_color": "blue",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Mystique.png"
+        },
+        {
+            "id": 90,
+            "name": "Moria Ruruka",
+            "cure_name": "Cure Arcana Shadow",
+            "categories": {
+                "season": [
+                    "Star Detective Precure!"
+                ],
+                "generation": 21,
+                "cure_hair_color": "black",
+                "cure_main_color": "black",
+                "cure_eyes_color": "red"
+            },
+            "image": "Arcana.png"
+        },
+        {
+            "id": 91,
+            "name": "Howa Kurea",
+            "cure_name": "Cure Eclair",
+            "categories": {
+                "season": [
+                    "Star Detective Precure!"
+                ],
+                "generation": 21,
+                "cure_hair_color": "unknown",
+                "cure_main_color": "unknown",
+                "cure_eyes_color": "unknown"
+            },
+            "image": "Eclair.png"
+        },
+        {
+            "id": 92,
+            "name": "Cure Art",
+            "cure_name": "Cure Art",
+            "categories": {
+                "season": [
+                    "HappinessCharge PreCure!"
+                ],
+                "generation": 9,
+                "cure_hair_color": "blonde",
+                "cure_main_color": "pink",
+                "cure_eyes_color": "pink"
+            },
+            "image": "Art.png"
+        },
+        {
+            "id": 93,
+            "name": "Cure Nile",
+            "cure_name": "Cure Nile",
+            "categories": {
+                "season": [
+                    "HappinessCharge PreCure!"
+                ],
+                "generation": 9,
+                "cure_hair_color": "blue",
+                "cure_main_color": "aquamarine",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Nile.png"
+        },
+        {
+            "id": 94,
+            "name": "Ohana",
+            "cure_name": "Cure Sunset",
+            "categories": {
+                "season": [
+                    "HappinessCharge PreCure!"
+                ],
+                "generation": 9,
+                "cure_hair_color": "orange",
+                "cure_main_color": "orange",
+                "cure_eyes_color": "maroon"
+            },
+            "image": "Sunset.png"
+        },
+        {
+            "id": 95,
+            "name": "Olina",
+            "cure_name": "Cure Wave",
+            "categories": {
+                "season": [
+                    "HappinessCharge PreCure!"
+                ],
+                "generation": 9,
+                "cure_hair_color": "black",
+                "cure_main_color": "turquoise",
+                "cure_eyes_color": "navy"
+            },
+            "image": "Wave.png"
+        },
+        {
+            "id": 96,
+            "name": "*Unknow*",
+            "cure_name": "Cure Continental",
+            "categories": {
+                "season": [
+                    "HappinessCharge PreCure!"
+                ],
+                "generation": 9,
+                "cure_hair_color": "blonde",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Continental.png"
+        },
+        {
+            "id": 97,
+            "name": "*Unknow*",
+            "cure_name": "Cure Katyusha",
+            "categories": {
+                "season": [
+                    "HappinessCharge PreCure!"
+                ],
+                "generation": 9,
+                "cure_hair_color": "brown",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "blue"
+            },
+            "image": "Katyusha.png"
+        },
+        {
+            "id": 98,
+            "name": "*Unknow*",
+            "cure_name": "Cure Southern Cross",
+            "categories": {
+                "season": [
+                    "HappinessCharge PreCure!"
+                ],
+                "generation": 9,
+                "cure_hair_color": "dark red",
+                "cure_main_color": "red",
+                "cure_eyes_color": "blue"
+            },
+            "image": "SouthernCross.png"
+        },
+        {
+            "id": 99,
+            "name": "*Unknow*",
+            "cure_name": "Cure Gonna",
+            "categories": {
+                "season": [
+                    "HappinessCharge PreCure!"
+                ],
+                "generation": 9,
+                "cure_hair_color": "orange",
+                "cure_main_color": "blue",
+                "cure_eyes_color": "orange"
+            },
+            "image": "Gonna.png"
+        },
+        {
+            "id": 100,
+            "name": "*Unknow*",
+            "cure_name": "Cure Pantaloni",
+            "categories": {
+                "season": [
+                    "HappinessCharge PreCure!"
+                ],
+                "generation": 9,
+                "cure_hair_color": "orange",
+                "cure_main_color": "yellow",
+                "cure_eyes_color": "orange"
+            },
+            "image": "Pantaloni.png"
+        },
+        {
+            "id": 101,
+            "name": "*Unknow*",
+            "cure_name": "Cure Matador",
+            "categories": {
+                "season": [
+                    "HappinessCharge PreCure!"
+                ],
+                "generation": 9,
+                "cure_hair_color": "unknown",
+                "cure_main_color": "red",
+                "cure_eyes_color": "unknown"
+            },
+            "image": "Matador.png"
+        },
+        {
+            "id": 102,
+            "name": "*Unknow*",
+            "cure_name": "Cure Shelly",
+            "categories": {
+                "season": [
+                    "HappinessCharge PreCure!"
+                ],
+                "generation": 9,
+                "cure_hair_color": "unknown",
+                "cure_main_color": "yellow",
+                "cure_eyes_color": "unknown"
+            },
+            "image": "Shelly.png"
+        }
+    ]
+}
