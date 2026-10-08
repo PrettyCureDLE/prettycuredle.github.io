@@ -56,6 +56,7 @@ const TRANSLATIONS = {
         header_last_episode: "Dernier épisode",
         header_attack_defeat: "Attaque / Défaite",
         info_movie: "Nombre de films auxquels la Cure a participé",
+        countdown_label: "Prochain personnage dans",
         message_not_found: "Personnage introuvable.",
         message_success: "Bravo ! Tu as trouvé {name} en {attempts} tentative(s) !",
         footer_legal: "Mentions légales",
@@ -80,6 +81,7 @@ const TRANSLATIONS = {
         header_last_episode: "Last Episode",
         header_attack_defeat: "Attack / Defeat",
         info_movie: "Number of movies the Cure appeared in",
+        countdown_label: "Next character in",
         message_not_found: "Character not found.",
         message_success: "Congrats! You found {name} in {attempts} attempt(s)!",
         footer_legal: "Legal notice",
@@ -104,6 +106,7 @@ const TRANSLATIONS = {
         header_last_episode: "最終登場話",
         header_attack_defeat: "必殺技 / 敗北",
         info_movie: "キュアが出演した映画の数",
+        countdown_label: "次のキャラクターまで",
         message_not_found: "キャラクターが見つかりません。",
         message_success: "おめでとう！{attempts}回で{name}を見つけました！",
         footer_legal: "法的事項",
@@ -171,7 +174,7 @@ const GAME_MODES = [
         searchFields: ["name", "cure_name"],
         revealField: "cure_name",
         columns: [
-            { type: "image" },
+            { type: "image", headerKey: "header_image" },
             { type: "text", field: "name", headerKey: "header_name" },
             { type: "text", field: "cure_name", headerKey: "header_cure_name" },
             { type: "season", headerKey: "header_seasons" },
@@ -191,7 +194,7 @@ const GAME_MODES = [
         searchFields: ["name"],
         revealField: "name",
         columns: [
-            { type: "image" },
+            { type: "image", headerKey: "header_image" },
             { type: "text", field: "name", headerKey: "header_name" },
             { type: "season", headerKey: "header_seasons" },
             { type: "episode", field: "categories.first_episode", headerKey: "header_first_episode" },
@@ -531,6 +534,12 @@ function applyTranslations() {
 
     if (guessButton) {
         guessButton.textContent = t("guess_button");
+    }
+
+    const countdownLabel = document.getElementById("countdown-label");
+
+    if (countdownLabel) {
+        countdownLabel.textContent = t("countdown_label");
     }
 
     currentMode.columns.forEach((column, index) => {
@@ -1143,6 +1152,78 @@ function getTodaySeed() {
 }
 
 
+// ============================================================
+// COMPTE À REBOURS AVANT LE PROCHAIN PERSONNAGE
+// ============================================================
+// getTodaySeed() se base sur la date UTC (getUTCFullYear /
+// getUTCMonth / getUTCDate) : le personnage du jour change donc
+// à minuit UTC, pas à minuit heure locale. Le compte à rebours
+// doit viser exactement ce même instant pour rester cohérent
+// avec le seed, quel que soit le fuseau horaire du visiteur.
+
+let nextResetDate = getNextResetDate();
+let countdownIntervalId = null;
+
+function getNextResetDate() {
+    const now = new Date();
+
+    return new Date(Date.UTC(
+        now.getUTCFullYear(),
+        now.getUTCMonth(),
+        now.getUTCDate() + 1,
+        0, 0, 0, 0
+    ));
+}
+
+function formatCountdown(remainingMs) {
+    const totalSeconds = Math.max(Math.floor(remainingMs / 1000), 0);
+
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    return [hours, minutes, seconds]
+        .map(value => String(value).padStart(2, "0"))
+        .join(":");
+}
+
+async function updateCountdown() {
+    const valueElement = document.getElementById("countdown-value");
+
+    if (!valueElement) {
+        return;
+    }
+
+    const remaining = nextResetDate.getTime() - Date.now();
+
+    if (remaining <= 0) {
+        // Minuit UTC vient de passer : on passe directement au
+        // personnage du jour suivant sans attendre un rechargement
+        // de la page, puis on relance le compte à rebours.
+        nextResetDate = getNextResetDate();
+        await startNewGame();
+    }
+
+    valueElement.textContent = formatCountdown(nextResetDate.getTime() - Date.now());
+}
+
+function setupCountdown() {
+    const label = document.getElementById("countdown-label");
+
+    if (label) {
+        label.textContent = t("countdown_label");
+    }
+
+    updateCountdown();
+
+    if (countdownIntervalId) {
+        clearInterval(countdownIntervalId);
+    }
+
+    countdownIntervalId = setInterval(updateCountdown, 1000);
+}
+
+
 // Hache la chaîne fournie en SHA-256 et renvoie un entier non
 // signé dérivé des 4 premiers octets du condensat. Le résultat
 // n'a aucun lien direct/prévisible avec la date d'origine,
@@ -1190,6 +1271,7 @@ async function init() {
     createGameInterface();
     setupTopBar();
     applyTranslations();
+    setupCountdown();
 
     await startNewGame();
 }
