@@ -12,6 +12,12 @@ const CHARACTER_IMAGE_PATH = "./Images/Pose/";
 // Clé utilisée pour mémoriser la langue choisie (localStorage).
 const LANGUAGE_STORAGE_KEY = "pcdle_language";
 
+// Préfixe des clés utilisées pour sauvegarder la partie en
+// cours (localStorage). Une clé par mode + par jour : le
+// lendemain, la date change donc la clé change, et l'ancienne
+// est nettoyée automatiquement (voir cleanupOldSessions).
+const SESSION_STORAGE_PREFIX = "pcdle_session_";
+
 // Chaîne ajoutée à la date avant hachage, pour ne pas exposer
 // directement la date du jour dans le calcul.
 const SEED_SALT = "PrettyCureDLE";
@@ -36,7 +42,7 @@ const LANGUAGES = [
 const TRANSLATIONS = {
     fr: {
         attempts_label: "Tentatives :",
-        guess_placeholder: "Entrez le nom d'une Cure...",
+        guess_placeholder: "Entrez un nom...",
         guess_button: "Deviner",
         header_image: "Image",
         header_name: "Nom",
@@ -46,17 +52,21 @@ const TRANSLATIONS = {
         header_main_color: "Couleur principale",
         header_eyes_color: "Couleur des yeux",
         header_movie: "Film",
+        header_first_episode: "Premier épisode",
+        header_last_episode: "Dernier épisode",
+        header_attack_defeat: "Attaque / Défaite",
+        info_movie: "Nombre de films auxquels la Cure a participé",
         message_not_found: "Personnage introuvable.",
-        message_success: "Bravo ! Tu as trouvé {cureName} en {attempts} tentative(s) !",
+        message_success: "Bravo ! Tu as trouvé {name} en {attempts} tentative(s) !",
         footer_legal: "Mentions légales",
         mode_cures: "Cures",
-        mode_mode2: "Mode 2",
+        mode_enemies: "Ennemis",
         mode_mode3: "Mode 3",
         mode_coming_soon: "Bientôt disponible"
     },
     en: {
         attempts_label: "Attempts:",
-        guess_placeholder: "Enter a Cure's name...",
+        guess_placeholder: "Enter a name...",
         guess_button: "Guess",
         header_image: "Image",
         header_name: "Name",
@@ -66,17 +76,21 @@ const TRANSLATIONS = {
         header_main_color: "Main Color",
         header_eyes_color: "Eyes Color",
         header_movie: "Movie",
+        header_first_episode: "First Episode",
+        header_last_episode: "Last Episode",
+        header_attack_defeat: "Attack / Defeat",
+        info_movie: "Number of movies the Cure appeared in",
         message_not_found: "Character not found.",
-        message_success: "Congrats! You found {cureName} in {attempts} attempt(s)!",
+        message_success: "Congrats! You found {name} in {attempts} attempt(s)!",
         footer_legal: "Legal notice",
         mode_cures: "Cures",
-        mode_mode2: "Mode 2",
+        mode_enemies: "Enemies",
         mode_mode3: "Mode 3",
         mode_coming_soon: "Coming soon"
     },
     ja: {
         attempts_label: "挑戦回数：",
-        guess_placeholder: "キュアの名前を入力...",
+        guess_placeholder: "名前を入力...",
         guess_button: "回答する",
         header_image: "画像",
         header_name: "名前",
@@ -86,11 +100,15 @@ const TRANSLATIONS = {
         header_main_color: "メインカラー",
         header_eyes_color: "瞳の色",
         header_movie: "映画",
+        header_first_episode: "初登場話",
+        header_last_episode: "最終登場話",
+        header_attack_defeat: "必殺技 / 敗北",
+        info_movie: "キュアが出演した映画の数",
         message_not_found: "キャラクターが見つかりません。",
-        message_success: "おめでとう！{attempts}回で{cureName}を見つけました！",
+        message_success: "おめでとう！{attempts}回で{name}を見つけました！",
         footer_legal: "法的事項",
         mode_cures: "キュア",
-        mode_mode2: "モード2",
+        mode_enemies: "敵",
         mode_mode3: "モード3",
         mode_coming_soon: "近日公開"
     }
@@ -120,18 +138,28 @@ function t(key, params = {}) {
 // ============================================================
 // MODES DE JEU
 // ============================================================
-// Chaque mode réutilise exactement le même mécanisme de jeu
-// (comparaison nom / saisons / couleurs / nombre de films),
-// mais pioche ses personnages dans un autre couple de fichiers
-// JSON. Les modes 2 et 3 sont pour l'instant désactivés
-// (available: false) car leurs fichiers de données n'existent
-// pas encore.
+// Chaque mode réutilise le même moteur de jeu (comparaison de
+// champs, saisons avec flèche basée sur la génération, etc.)
+// mais pioche ses personnages dans un autre fichier JSON et
+// affiche ses propres colonnes ("columns").
 //
-// Pour activer un nouveau mode plus tard :
-//   1. Déposer ses fichiers dans Data/ (même structure que
-//      Cures.json / Films.json).
-//   2. Renseigner characterFile (et filmFile si besoin) ci-dessous.
-//   3. Passer available à true.
+// Types de colonne disponibles :
+//   - "image"   : la portrait du personnage, pas de comparaison
+//   - "text"    : comparaison stricte d'un champ (field: chemin
+//                 à points dans l'objet, ex. "categories.attack_defeat")
+//   - "season"  : saisons + flèche basée sur "categories.generation"
+//                 (qui n'est jamais affichée telle quelle)
+//   - "episode" : nombre d'épisode, avec flèche s'il s'agit de
+//                 deux nombres, ou un trait "—" si l'un des deux
+//                 est un nom de film (donc pas comparable)
+//   - "movie"   : nombre de films (déduit de filmFile), avec
+//                 flèche, et une bulle d'info optionnelle (infoKey)
+//
+// Pour ajouter un mode : lui donner un id, un characterFile, un
+// dataKey (nom de la clé racine du tableau dans le JSON), des
+// searchFields (champs utilisés pour chercher/suggérer), un
+// revealField (nom affiché dans le message de victoire), ses
+// columns, et available: true une fois le JSON prêt.
 
 const GAME_MODES = [
     {
@@ -139,20 +167,48 @@ const GAME_MODES = [
         labelKey: "mode_cures",
         characterFile: "./Data/Cures.json",
         filmFile: "./Data/Films.json",
+        dataKey: "characters",
+        searchFields: ["name", "cure_name"],
+        revealField: "cure_name",
+        columns: [
+            { type: "image" },
+            { type: "text", field: "name", headerKey: "header_name" },
+            { type: "text", field: "cure_name", headerKey: "header_cure_name" },
+            { type: "season", headerKey: "header_seasons" },
+            { type: "text", field: "categories.cure_hair_color", headerKey: "header_hair_color" },
+            { type: "text", field: "categories.cure_main_color", headerKey: "header_main_color" },
+            { type: "text", field: "categories.cure_eyes_color", headerKey: "header_eyes_color" },
+            { type: "movie", headerKey: "header_movie", infoKey: "info_movie" }
+        ],
         available: true
     },
     {
-        id: "mode2",
-        labelKey: "mode_mode2",
-        characterFile: "./Data/Mode2.json",
-        filmFile: "./Data/Mode2_Films.json",
-        available: false
+        id: "enemies",
+        labelKey: "mode_enemies",
+        characterFile: "./Data/Enemies.json",
+        filmFile: null,
+        dataKey: "enemies",
+        searchFields: ["name"],
+        revealField: "name",
+        columns: [
+            { type: "image" },
+            { type: "text", field: "name", headerKey: "header_name" },
+            { type: "season", headerKey: "header_seasons" },
+            { type: "episode", field: "categories.first_episode", headerKey: "header_first_episode" },
+            { type: "episode", field: "categories.last_episode", headerKey: "header_last_episode" },
+            { type: "text", field: "categories.attack_defeat", headerKey: "header_attack_defeat" }
+        ],
+        available: true
     },
     {
         id: "mode3",
         labelKey: "mode_mode3",
         characterFile: "./Data/Mode3.json",
         filmFile: "./Data/Mode3_Films.json",
+        dataKey: "characters",
+        searchFields: ["name"],
+        revealField: "name",
+        columns: [],
         available: false
     }
 ];
@@ -171,6 +227,11 @@ let targetCharacter = null;
 let attempts = 0;
 let gameFinished = false;
 
+// Identifiants des personnages déjà devinés dans la partie en
+// cours, dans l'ordre, pour pouvoir sauvegarder/restaurer la
+// session.
+let guessHistory = [];
+
 
 // ============================================================
 // CHARGEMENT DES DONNÉES
@@ -185,7 +246,7 @@ async function loadData(mode) {
         }
 
         const charactersData = await charactersResponse.json();
-        characters = charactersData.characters || [];
+        characters = charactersData[mode.dataKey] || [];
 
         if (mode.filmFile) {
             const filmsResponse = await fetch(mode.filmFile);
@@ -200,8 +261,6 @@ async function loadData(mode) {
         else {
             films = [];
         }
-
-        console.log(`Données chargées pour le mode "${mode.id}" :`, characters.length, "personnage(s)");
     }
     catch (error) {
         console.error("Erreur lors du chargement des données :", error);
@@ -213,6 +272,21 @@ async function loadData(mode) {
             </p>
         `;
     }
+}
+
+
+// ============================================================
+// ACCÈS GÉNÉRIQUE À UN CHAMP ("a.b.c")
+// ============================================================
+
+function getField(object, path) {
+    if (!object || !path) {
+        return undefined;
+    }
+
+    return path
+        .split(".")
+        .reduce((value, key) => (value === undefined || value === null ? undefined : value[key]), object);
 }
 
 
@@ -349,6 +423,8 @@ async function selectMode(mode) {
     renderModeSwitcher();
 
     await loadData(currentMode);
+    createGameInterface();
+
     await startNewGame();
 }
 
@@ -457,30 +533,46 @@ function applyTranslations() {
         guessButton.textContent = t("guess_button");
     }
 
-    const headerKeysById = {
-        "header-image": "header_image",
-        "header-name": "header_name",
-        "header-cure-name": "header_cure_name",
-        "header-seasons": "header_seasons",
-        "header-hair-color": "header_hair_color",
-        "header-main-color": "header_main_color",
-        "header-eyes-color": "header_eyes_color",
-        "header-movie": "header_movie"
-    };
+    currentMode.columns.forEach((column, index) => {
+        const header = document.getElementById(`header-col-${index}`);
 
-    for (const [id, key] of Object.entries(headerKeysById)) {
-        const element = document.getElementById(id);
-
-        if (element) {
-            element.textContent = t(key);
+        if (!header) {
+            return;
         }
-    }
+
+        header.textContent = t(column.headerKey);
+
+        if (column.infoKey) {
+            const icon = document.createElement("span");
+            icon.className = "info-icon";
+            icon.title = t(column.infoKey);
+            icon.textContent = "ⓘ";
+            header.appendChild(icon);
+        }
+    });
 }
 
 
 // ============================================================
 // CRÉATION DE L'INTERFACE
 // ============================================================
+
+function renderColumnHeader(column, index) {
+    const infoHTML = column.infoKey
+        ? ` <span class="info-icon" title="${escapeHTML(t(column.infoKey))}">ⓘ</span>`
+        : "";
+
+    return `<div id="header-col-${index}">${t(column.headerKey)}${infoHTML}</div>`;
+}
+
+function setResultsGridColumns() {
+    const count = Math.max(currentMode.columns.length, 1);
+
+    document.documentElement.style.setProperty(
+        "--results-grid-columns",
+        `80px repeat(${count - 1}, 1fr)`
+    );
+}
 
 function createGameInterface() {
     const gameContainer = document.querySelector(".game-container");
@@ -489,6 +581,10 @@ function createGameInterface() {
         console.error("Impossible de trouver .game-container");
         return;
     }
+
+    const headerCells = currentMode.columns
+        .map((column, index) => renderColumnHeader(column, index))
+        .join("");
 
     gameContainer.innerHTML = `
         <div id="game">
@@ -518,16 +614,7 @@ function createGameInterface() {
             <div id="message"></div>
 
             <div id="results">
-                <div class="results-header">
-                    <div id="header-image">${t("header_image")}</div>
-                    <div id="header-name">${t("header_name")}</div>
-                    <div id="header-cure-name">${t("header_cure_name")}</div>
-                    <div id="header-seasons">${t("header_seasons")}</div>
-                    <div id="header-hair-color">${t("header_hair_color")}</div>
-                    <div id="header-main-color">${t("header_main_color")}</div>
-                    <div id="header-eyes-color">${t("header_eyes_color")}</div>
-                    <div id="header-movie">${t("header_movie")}</div>
-                </div>
+                <div class="results-header">${headerCells}</div>
 
                 <div id="guess-results"></div>
             </div>
@@ -535,6 +622,7 @@ function createGameInterface() {
         </div>
     `;
 
+    setResultsGridColumns();
     setupEvents();
 }
 
@@ -577,20 +665,24 @@ function updateSuggestions() {
 
     const matchingCharacters = characters
         .filter(character => {
-            const name = normalizeText(character.name);
-            const cureName = normalizeText(character.cure_name);
-
-            return name.includes(value) || cureName.includes(value);
+            return currentMode.searchFields.some(field =>
+                normalizeText(getField(character, field)).includes(value)
+            );
         })
         .slice(0, 8);
 
     for (const character of matchingCharacters) {
+        const label = currentMode.searchFields
+            .map(field => getField(character, field))
+            .filter(part => part !== undefined && part !== null && part !== "")
+            .join(" — ");
+
         const suggestion = document.createElement("div");
         suggestion.className = "suggestion";
-        suggestion.textContent = `${character.name} — ${character.cure_name}`;
+        suggestion.textContent = label;
 
         suggestion.addEventListener("click", () => {
-            input.value = character.name;
+            input.value = getField(character, currentMode.searchFields[0]);
             suggestions.innerHTML = "";
         });
 
@@ -606,12 +698,9 @@ function updateSuggestions() {
 function findCharacter(value) {
     const normalized = normalizeText(value);
 
-    return characters.find(character => {
-        return (
-            normalizeText(character.name) === normalized ||
-            normalizeText(character.cure_name) === normalized
-        );
-    });
+    return characters.find(character =>
+        currentMode.searchFields.some(field => normalizeText(getField(character, field)) === normalized)
+    );
 }
 
 
@@ -639,6 +728,7 @@ function submitGuess() {
     }
 
     attempts++;
+    guessHistory.push(character.id);
     document.getElementById("attempt-count").textContent = attempts;
 
     addGuessResult(character);
@@ -651,7 +741,7 @@ function submitGuess() {
 
         showMessage(
             t("message_success", {
-                cureName: targetCharacter.cure_name,
+                name: getField(targetCharacter, currentMode.revealField),
                 attempts
             }),
             "success"
@@ -660,6 +750,8 @@ function submitGuess() {
         input.disabled = true;
         document.getElementById("guess-button").disabled = true;
     }
+
+    saveSession();
 }
 
 
@@ -670,71 +762,84 @@ function submitGuess() {
 function addGuessResult(character) {
     const results = document.getElementById("guess-results");
 
-    const targetCategories = targetCharacter.categories || {};
-    const guessCategories = character.categories || {};
-
-    const targetSeasons = targetCategories.season || [];
-    const guessSeasons = guessCategories.season || [];
-
-    const seasonComparison = compareSeasons(guessSeasons, targetSeasons);
-
-    const targetMovieCount = getMovieCount(targetCharacter.id);
-    const guessMovieCount = getMovieCount(character.id);
-
     const row = document.createElement("div");
     row.className = "guess-row";
 
-    row.innerHTML = `
-
-        <div class="result-cell image-cell">
-            <img
-                src="${getCharacterImage(character)}"
-                alt="${escapeHTML(character.cure_name)}"
-            >
-        </div>
-
-        ${createResultCell(
-            character.name,
-            compareValue(character.name, targetCharacter.name)
-        )}
-
-        ${createResultCell(
-            character.cure_name,
-            compareValue(character.cure_name, targetCharacter.cure_name)
-        )}
-
-        ${createSeasonCell(
-            guessSeasons,
-            seasonComparison,
-            guessCategories.generation,
-            targetCategories.generation
-        )}
-
-        ${createResultCell(
-            guessCategories.cure_hair_color,
-            compareValue(guessCategories.cure_hair_color, targetCategories.cure_hair_color)
-        )}
-
-        ${createResultCell(
-            guessCategories.cure_main_color,
-            compareValue(guessCategories.cure_main_color, targetCategories.cure_main_color)
-        )}
-
-        ${createResultCell(
-            guessCategories.cure_eyes_color,
-            compareValue(guessCategories.cure_eyes_color, targetCategories.cure_eyes_color)
-        )}
-
-        ${createMovieCell(guessMovieCount, targetMovieCount)}
-
-    `;
+    row.innerHTML = currentMode.columns
+        .map(column => renderColumnCell(column, character))
+        .join("");
 
     results.prepend(row);
 }
 
+function renderColumnCell(column, character) {
+    switch (column.type) {
+        case "image":
+            return renderImageCell(character);
+
+        case "text":
+            return createResultCell(
+                getField(character, column.field),
+                compareValue(getField(character, column.field), getField(targetCharacter, column.field))
+            );
+
+        case "season": {
+            const guessSeasons = getField(character, "categories.season") || [];
+            const targetSeasons = getField(targetCharacter, "categories.season") || [];
+
+            return createSeasonCell(
+                guessSeasons,
+                compareSeasons(guessSeasons, targetSeasons),
+                getField(character, "categories.generation"),
+                getField(targetCharacter, "categories.generation")
+            );
+        }
+
+        case "episode":
+            return createEpisodeCell(
+                getField(character, column.field),
+                getField(targetCharacter, column.field)
+            );
+
+        case "movie":
+            return createMovieCell(getMovieCount(character.id), getMovieCount(targetCharacter.id));
+
+        default:
+            return "";
+    }
+}
+
 
 // ============================================================
-// CELLULE DE RÉSULTAT
+// CELLULE IMAGE
+// ============================================================
+
+function renderImageCell(character) {
+    const src = getCharacterImage(character);
+    const alt = escapeHTML(getField(character, currentMode.revealField) || "");
+
+    if (!src) {
+        return `
+            <div class="result-cell image-cell">
+                <div class="image-placeholder">?</div>
+            </div>
+        `;
+    }
+
+    return `
+        <div class="result-cell image-cell">
+            <img
+                src="${src}"
+                alt="${alt}"
+                onerror="this.style.display='none'; this.parentElement.classList.add('image-missing');"
+            >
+        </div>
+    `;
+}
+
+
+// ============================================================
+// CELLULE DE RÉSULTAT (comparaison simple)
 // ============================================================
 
 function createResultCell(value, correct) {
@@ -742,7 +847,7 @@ function createResultCell(value, correct) {
 
     return `
         <div class="result-cell ${className}">
-            ${escapeHTML(value !== undefined && value !== null ? String(value) : "?")}
+            ${escapeHTML(value !== undefined && value !== null && value !== "" ? String(value) : "?")}
         </div>
     `;
 }
@@ -751,7 +856,7 @@ function createResultCell(value, correct) {
 // ============================================================
 // CELLULE DES SAISONS
 // ============================================================
-// La catégorie "Génération" n'est plus affichée en tant que
+// La catégorie "Génération" n'est jamais affichée en tant que
 // colonne à part : elle reste dans les données et sert
 // uniquement à déterminer la flèche (monte / descend)
 // affichée dans la case des saisons.
@@ -767,7 +872,7 @@ function createSeasonCell(seasons, comparison, guessGeneration, targetGeneration
         className = "partial";
     }
 
-    if (!comparison.exact) {
+    if (!comparison.exact && guessGeneration !== undefined && targetGeneration !== undefined) {
         if (guessGeneration < targetGeneration) {
             arrow = " ↑";
         }
@@ -779,6 +884,47 @@ function createSeasonCell(seasons, comparison, guessGeneration, targetGeneration
     return `
         <div class="result-cell ${className}">
             ${seasons.length > 0 ? seasons.map(escapeHTML).join("<br>") : "?"}${arrow}
+        </div>
+    `;
+}
+
+
+// ============================================================
+// CELLULE ÉPISODE (first_episode / last_episode)
+// ============================================================
+// La valeur est soit un numéro d'épisode (nombre), soit un nom
+// de film (texte) quand l'apparition a lieu dans un film plutôt
+// que dans la série, soit null si inconnu. On ne peut comparer
+// un "ordre" que si les deux valeurs sont des nombres ; sinon on
+// affiche un simple trait "—" plutôt qu'une flèche trompeuse.
+
+function createEpisodeCell(guessValue, targetValue) {
+    const hasGuessValue = guessValue !== undefined && guessValue !== null && guessValue !== "";
+    const hasTargetValue = targetValue !== undefined && targetValue !== null && targetValue !== "";
+
+    const correct = compareValue(guessValue, targetValue);
+    const className = correct ? "correct" : "incorrect";
+    const displayValue = hasGuessValue ? String(guessValue) : "?";
+
+    let suffix = "";
+
+    if (!correct && hasGuessValue && hasTargetValue) {
+        const guessIsNumber = typeof guessValue === "number";
+        const targetIsNumber = typeof targetValue === "number";
+
+        if (guessIsNumber && targetIsNumber) {
+            suffix = guessValue < targetValue ? " ↑" : " ↓";
+        }
+        else {
+            // L'une des deux valeurs (ou les deux) est un nom de
+            // film : il n'y a pas d'ordre numérique à comparer.
+            suffix = " —";
+        }
+    }
+
+    return `
+        <div class="result-cell ${className}">
+            ${escapeHTML(displayValue)}${suffix}
         </div>
     `;
 }
@@ -797,14 +943,7 @@ function createMovieCell(guessCount, targetCount) {
         `;
     }
 
-    let arrow = "";
-
-    if (guessCount < targetCount) {
-        arrow = " ↑";
-    }
-    else if (guessCount > targetCount) {
-        arrow = " ↓";
-    }
+    const arrow = guessCount < targetCount ? " ↑" : " ↓";
 
     return `
         <div class="result-cell incorrect">
@@ -858,6 +997,110 @@ function escapeHTML(value) {
 
 
 // ============================================================
+// SAUVEGARDE DE LA SESSION (localStorage)
+// ============================================================
+// Une partie est sauvegardée par mode et par jour : si tu
+// recharges la page, tes propositions déjà faites réapparaissent
+// automatiquement. Le lendemain, la date change donc c'est une
+// toute nouvelle clé : la sauvegarde de la veille devient
+// obsolète (et sera nettoyée par cleanupOldSessions).
+
+function getSessionKey(mode, dateSeed) {
+    return `${SESSION_STORAGE_PREFIX}${mode.id}_${dateSeed}`;
+}
+
+function saveSession() {
+    const key = getSessionKey(currentMode, getTodaySeed());
+
+    const session = {
+        guesses: guessHistory,
+        attempts,
+        finished: gameFinished
+    };
+
+    try {
+        localStorage.setItem(key, JSON.stringify(session));
+    }
+    catch (error) {
+        console.error("Impossible de sauvegarder la session :", error);
+    }
+}
+
+function restoreSession() {
+    const key = getSessionKey(currentMode, getTodaySeed());
+
+    let session = null;
+
+    try {
+        const raw = localStorage.getItem(key);
+
+        if (raw) {
+            session = JSON.parse(raw);
+        }
+    }
+    catch (error) {
+        console.error("Impossible de lire la session sauvegardée :", error);
+    }
+
+    if (!session || !Array.isArray(session.guesses)) {
+        return;
+    }
+
+    for (const id of session.guesses) {
+        const character = characters.find(item => item.id === id);
+
+        if (character) {
+            addGuessResult(character);
+        }
+    }
+
+    guessHistory = [...session.guesses];
+    attempts = session.attempts || session.guesses.length;
+    document.getElementById("attempt-count").textContent = attempts;
+
+    if (session.finished) {
+        gameFinished = true;
+
+        showMessage(
+            t("message_success", {
+                name: getField(targetCharacter, currentMode.revealField),
+                attempts
+            }),
+            "success"
+        );
+
+        document.getElementById("guess-input").disabled = true;
+        document.getElementById("guess-button").disabled = true;
+    }
+}
+
+// Supprime les sessions sauvegardées des jours précédents, pour
+// ne pas accumuler des clés inutiles dans le localStorage.
+function cleanupOldSessions() {
+    const todaySeed = getTodaySeed();
+
+    try {
+        const keysToRemove = [];
+
+        for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+
+            if (key && key.startsWith(SESSION_STORAGE_PREFIX) && !key.endsWith(todaySeed)) {
+                keysToRemove.push(key);
+            }
+        }
+
+        for (const key of keysToRemove) {
+            localStorage.removeItem(key);
+        }
+    }
+    catch (error) {
+        console.error("Impossible de nettoyer les anciennes sessions :", error);
+    }
+}
+
+
+// ============================================================
 // NOUVELLE PARTIE
 // ============================================================
 
@@ -870,6 +1113,7 @@ async function startNewGame() {
 
     attempts = 0;
     gameFinished = false;
+    guessHistory = [];
 
     document.getElementById("attempt-count").textContent = "0";
     document.getElementById("guess-results").innerHTML = "";
@@ -881,6 +1125,8 @@ async function startNewGame() {
     input.disabled = false;
 
     document.getElementById("guess-button").disabled = false;
+
+    restoreSession();
 }
 
 
@@ -932,6 +1178,8 @@ async function getDailyCharacter() {
 // ============================================================
 
 async function init() {
+    cleanupOldSessions();
+
     await loadData(currentMode);
 
     if (characters.length === 0) {

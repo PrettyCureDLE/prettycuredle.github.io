@@ -1,0 +1,2860 @@
+{
+    "enemies": [
+        {
+            "id": 1,
+            "name": "Pisard",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure"
+                ],
+                "generation": 1,
+                "first_episode": 1,
+                "last_episode": 5,
+                "attack_defeat": "Marble Screw"
+            },
+            "image": null
+        },
+        {
+            "id": 2,
+            "name": "Gekidrago",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure"
+                ],
+                "generation": 1,
+                "first_episode": "4*",
+                "last_episode": 11,
+                "attack_defeat": "Marble Screw"
+            },
+            "image": null
+        },
+        {
+            "id": 3,
+            "name": "Poisony",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure"
+                ],
+                "generation": 1,
+                "first_episode": 12,
+                "last_episode": 20,
+                "attack_defeat": "Marble Screw"
+            },
+            "image": null
+        },
+        {
+            "id": 4,
+            "name": "Kiriya",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure"
+                ],
+                "generation": 1,
+                "first_episode": 12,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 5,
+            "name": "Ilkubo",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure"
+                ],
+                "generation": 1,
+                "first_episode": 19,
+                "last_episode": 26,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 6,
+            "name": "Evil King",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure"
+                ],
+                "generation": 1,
+                "first_episode": 1,
+                "last_episode": 26,
+                "attack_defeat": "Marble Screw"
+            },
+            "image": null
+        },
+        {
+            "id": 7,
+            "name": "Belzei Gertrude",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure"
+                ],
+                "generation": 1,
+                "first_episode": 27,
+                "last_episode": 48,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 8,
+            "name": "Regine",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure"
+                ],
+                "generation": 1,
+                "first_episode": 27,
+                "last_episode": 48,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 9,
+            "name": "Juna",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure"
+                ],
+                "generation": 1,
+                "first_episode": 27,
+                "last_episode": 48,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 10,
+            "name": "Circulas",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure Max Heart"
+                ],
+                "generation": 1,
+                "first_episode": 1,
+                "last_episode": 46,
+                "attack_defeat": "Marble Screw Max Spark"
+            },
+            "image": null
+        },
+        {
+            "id": 11,
+            "name": "Uraganos",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure Max Heart"
+                ],
+                "generation": 1,
+                "first_episode": 6,
+                "last_episode": 46,
+                "attack_defeat": "Marble Screw Max Spark"
+            },
+            "image": null
+        },
+        {
+            "id": 12,
+            "name": "Viblis",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure Max Heart"
+                ],
+                "generation": 1,
+                "first_episode": 9,
+                "last_episode": 46,
+                "attack_defeat": "Marble Screw Max Spark"
+            },
+            "image": null
+        },
+        {
+            "id": 13,
+            "name": "Baldez",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure Max Heart"
+                ],
+                "generation": 1,
+                "first_episode": 12,
+                "last_episode": 47,
+                "attack_defeat": "Extreme Luminario Max"
+            },
+            "image": null
+        },
+        {
+            "id": 14,
+            "name": "Evil King",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure Max Heart"
+                ],
+                "generation": 1,
+                "first_episode": 45,
+                "last_episode": 47,
+                "attack_defeat": "Extreme Luminario Max"
+            },
+            "image": null
+        },
+        {
+            "id": 15,
+            "name": "Karehan",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure Splash☆Star"
+                ],
+                "generation": 2,
+                "first_episode": 1,
+                "last_episode": 43,
+                "attack_defeat": "Spiral Heart Splash"
+            },
+            "image": null
+        },
+        {
+            "id": 16,
+            "name": "Moerumba",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure Splash☆Star"
+                ],
+                "generation": 2,
+                "first_episode": 8,
+                "last_episode": 43,
+                "attack_defeat": "Spiral Star Splash"
+            },
+            "image": null
+        },
+        {
+            "id": 17,
+            "name": "Kiryuu Michiru",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure Splash☆Star"
+                ],
+                "generation": 2,
+                "first_episode": 14,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 18,
+            "name": "Kiryuu Kaoru",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure Splash☆Star"
+                ],
+                "generation": 2,
+                "first_episode": 14,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 19,
+            "name": "Dorodoron",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure Splash☆Star"
+                ],
+                "generation": 2,
+                "first_episode": 14,
+                "last_episode": 44,
+                "attack_defeat": "Spiral Heart Splash"
+            },
+            "image": null
+        },
+        {
+            "id": 20,
+            "name": "Ms. Shitataare",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure Splash☆Star"
+                ],
+                "generation": 2,
+                "first_episode": 24,
+                "last_episode": 45,
+                "attack_defeat": "Spiral Heart Splash"
+            },
+            "image": null
+        },
+        {
+            "id": 21,
+            "name": "Kintoleski",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure Splash☆Star"
+                ],
+                "generation": 2,
+                "first_episode": 33,
+                "last_episode": 45,
+                "attack_defeat": "Spiral Heart Splash"
+            },
+            "image": null
+        },
+        {
+            "id": 22,
+            "name": "Akudaikan",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure Splash☆Star"
+                ],
+                "generation": 2,
+                "first_episode": 23,
+                "last_episode": 47,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 23,
+            "name": "Goyan",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure Splash☆Star"
+                ],
+                "generation": 2,
+                "first_episode": 1,
+                "last_episode": 49,
+                "attack_defeat": "Spiral Heart Splash Star"
+            },
+            "image": null
+        },
+        {
+            "id": 24,
+            "name": "Girinma",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5"
+                ],
+                "generation": 3,
+                "first_episode": 1,
+                "last_episode": 24,
+                "attack_defeat": "Five Explosion"
+            },
+            "image": null
+        },
+        {
+            "id": 25,
+            "name": "Gamao",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5"
+                ],
+                "generation": 3,
+                "first_episode": 3,
+                "last_episode": 36,
+                "attack_defeat": "Five Explosion"
+            },
+            "image": null
+        },
+        {
+            "id": 26,
+            "name": "Arachnea",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5"
+                ],
+                "generation": 3,
+                "first_episode": 4,
+                "last_episode": 30,
+                "attack_defeat": "Five Explosion"
+            },
+            "image": null
+        },
+        {
+            "id": 27,
+            "name": "Bunbee",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5"
+                ],
+                "generation": 3,
+                "first_episode": 2,
+                "last_episode": 46,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 28,
+            "name": "Kawarino",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5"
+                ],
+                "generation": 3,
+                "first_episode": 7,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 29,
+            "name": "Hadenya",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5"
+                ],
+                "generation": 3,
+                "first_episode": 31,
+                "last_episode": 44,
+                "attack_defeat": "Five Explosion"
+            },
+            "image": null
+        },
+        {
+            "id": 30,
+            "name": "Bloody",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5"
+                ],
+                "generation": 3,
+                "first_episode": 31,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 31,
+            "name": "Desperaia",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5"
+                ],
+                "generation": 3,
+                "first_episode": 8,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 32,
+            "name": "Scorp",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5 GoGo!"
+                ],
+                "generation": 3,
+                "first_episode": 1,
+                "last_episode": 11,
+                "attack_defeat": "Milky Rose Blizzard"
+            },
+            "image": null
+        },
+        {
+            "id": 33,
+            "name": "Bunbee",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5 GoGo!"
+                ],
+                "generation": 3,
+                "first_episode": 3,
+                "last_episode": 48,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 34,
+            "name": "Nebatakos",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5 GoGo!"
+                ],
+                "generation": 3,
+                "first_episode": 12,
+                "last_episode": 24,
+                "attack_defeat": "Rainbow Rose Explosion"
+            },
+            "image": null
+        },
+        {
+            "id": 35,
+            "name": "Shibiretta",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5 GoGo!"
+                ],
+                "generation": 3,
+                "first_episode": 13,
+                "last_episode": 42,
+                "attack_defeat": "Rainbow Rose Explosion"
+            },
+            "image": null
+        },
+        {
+            "id": 36,
+            "name": "Isohgin",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5 GoGo!"
+                ],
+                "generation": 3,
+                "first_episode": 25,
+                "last_episode": 38,
+                "attack_defeat": "Dream & Rose Duo Attack"
+            },
+            "image": null
+        },
+        {
+            "id": 37,
+            "name": "Yadokhan",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5 GoGo!"
+                ],
+                "generation": 3,
+                "first_episode": 25,
+                "last_episode": 38,
+                "attack_defeat": "Dream & Rose Duo Attack"
+            },
+            "image": null
+        },
+        {
+            "id": 38,
+            "name": "Mucardia",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5 GoGo!"
+                ],
+                "generation": 3,
+                "first_episode": 29,
+                "last_episode": 46,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 39,
+            "name": "Anacondy",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5 GoGo!"
+                ],
+                "generation": 3,
+                "first_episode": 6,
+                "last_episode": 47,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 40,
+            "name": "Boss",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5 GoGo!"
+                ],
+                "generation": 3,
+                "first_episode": 11,
+                "last_episode": 48,
+                "attack_defeat": "Floral Explosion"
+            },
+            "image": null
+        },
+        {
+            "id": 41,
+            "name": "Eas",
+            "categories": {
+                "season": [
+                    "Fresh Pretty Cure!"
+                ],
+                "generation": 4,
+                "first_episode": 1,
+                "last_episode": 23,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 42,
+            "name": "Westar",
+            "categories": {
+                "season": [
+                    "Fresh Pretty Cure!"
+                ],
+                "generation": 4,
+                "first_episode": 4,
+                "last_episode": 50,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 43,
+            "name": "Soular",
+            "categories": {
+                "season": [
+                    "Fresh Pretty Cure!"
+                ],
+                "generation": 4,
+                "first_episode": 6,
+                "last_episode": 50,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 44,
+            "name": "Klein",
+            "categories": {
+                "season": [
+                    "Fresh Pretty Cure!"
+                ],
+                "generation": 4,
+                "first_episode": 9,
+                "last_episode": 49,
+                "attack_defeat": "Loving True Heart"
+            },
+            "image": null
+        },
+        {
+            "id": 45,
+            "name": "Northa",
+            "categories": {
+                "season": [
+                    "Fresh Pretty Cure!"
+                ],
+                "generation": 4,
+                "first_episode": 35,
+                "last_episode": 49,
+                "attack_defeat": "Happiness Hurricane"
+            },
+            "image": null
+        },
+        {
+            "id": 46,
+            "name": "Moebius",
+            "categories": {
+                "season": [
+                    "Fresh Pretty Cure!"
+                ],
+                "generation": 4,
+                "first_episode": 1,
+                "last_episode": 50,
+                "attack_defeat": "Loving True Heart Fresh"
+            },
+            "image": null
+        },
+        {
+            "id": 47,
+            "name": "Sasorina",
+            "categories": {
+                "season": [
+                    "HeartCatch Pretty Cure!"
+                ],
+                "generation": 5,
+                "first_episode": 1,
+                "last_episode": 49,
+                "attack_defeat": "Heartcatch Orchestra"
+            },
+            "image": null
+        },
+        {
+            "id": 48,
+            "name": "Kumojaki",
+            "categories": {
+                "season": [
+                    "HeartCatch Pretty Cure!"
+                ],
+                "generation": 5,
+                "first_episode": 4,
+                "last_episode": 49,
+                "attack_defeat": "Blue Forte Wave"
+            },
+            "image": null
+        },
+        {
+            "id": 49,
+            "name": "Cobraja",
+            "categories": {
+                "season": [
+                    "HeartCatch Pretty Cure!"
+                ],
+                "generation": 5,
+                "first_episode": 5,
+                "last_episode": 49,
+                "attack_defeat": "Gold Forte Burst"
+            },
+            "image": null
+        },
+        {
+            "id": 50,
+            "name": "Dark Pretty Cure",
+            "categories": {
+                "season": [
+                    "HeartCatch Pretty Cure!"
+                ],
+                "generation": 5,
+                "first_episode": 10,
+                "last_episode": 48,
+                "attack_defeat": "Floral Power Fortissimo"
+            },
+            "image": null
+        },
+        {
+            "id": 51,
+            "name": "Professor Sabaku",
+            "categories": {
+                "season": [
+                    "HeartCatch Pretty Cure!"
+                ],
+                "generation": 5,
+                "first_episode": 1,
+                "last_episode": 48,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 52,
+            "name": "Dune",
+            "categories": {
+                "season": [
+                    "HeartCatch Pretty Cure!"
+                ],
+                "generation": 5,
+                "first_episode": 20,
+                "last_episode": 49,
+                "attack_defeat": "Straight Punch"
+            },
+            "image": null
+        },
+        {
+            "id": 53,
+            "name": "Siren",
+            "categories": {
+                "season": [
+                    "Suite Pretty Cure♪"
+                ],
+                "generation": 6,
+                "first_episode": 1,
+                "last_episode": 48,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 54,
+            "name": "Mephisto",
+            "categories": {
+                "season": [
+                    "Suite Pretty Cure♪"
+                ],
+                "generation": 6,
+                "first_episode": 1,
+                "last_episode": 48,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 55,
+            "name": "Bassdrum",
+            "categories": {
+                "season": [
+                    "Suite Pretty Cure♪"
+                ],
+                "generation": 6,
+                "first_episode": 1,
+                "last_episode": 48,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 56,
+            "name": "Baritone",
+            "categories": {
+                "season": [
+                    "Suite Pretty Cure♪"
+                ],
+                "generation": 6,
+                "first_episode": 1,
+                "last_episode": 48,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 57,
+            "name": "Falsetto",
+            "categories": {
+                "season": [
+                    "Suite Pretty Cure♪"
+                ],
+                "generation": 6,
+                "first_episode": 1,
+                "last_episode": 48,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 58,
+            "name": "Noise",
+            "categories": {
+                "season": [
+                    "Suite Pretty Cure♪"
+                ],
+                "generation": 6,
+                "first_episode": 38,
+                "last_episode": 48,
+                "attack_defeat": "Suite Session Ensemble Crescendo"
+            },
+            "image": null
+        },
+        {
+            "id": 59,
+            "name": "Wolfrun",
+            "categories": {
+                "season": [
+                    "Smile Pretty Cure!"
+                ],
+                "generation": 7,
+                "first_episode": 1,
+                "last_episode": 45,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 60,
+            "name": "Akaoni",
+            "categories": {
+                "season": [
+                    "Smile Pretty Cure!"
+                ],
+                "generation": 7,
+                "first_episode": 3,
+                "last_episode": 45,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 61,
+            "name": "Majorina",
+            "categories": {
+                "season": [
+                    "Smile Pretty Cure!"
+                ],
+                "generation": 7,
+                "first_episode": 5,
+                "last_episode": 45,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 62,
+            "name": "Joker",
+            "categories": {
+                "season": [
+                    "Smile Pretty Cure!"
+                ],
+                "generation": 7,
+                "first_episode": 11,
+                "last_episode": 47,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 63,
+            "name": "Pierrot",
+            "categories": {
+                "season": [
+                    "Smile Pretty Cure!"
+                ],
+                "generation": 7,
+                "first_episode": 23,
+                "last_episode": 48,
+                "attack_defeat": "Miracle Rainbow Burst"
+            },
+            "image": null
+        },
+        {
+            "id": 64,
+            "name": "Ira",
+            "categories": {
+                "season": [
+                    "DokiDoki! Pretty Cure"
+                ],
+                "generation": 8,
+                "first_episode": 1,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 65,
+            "name": "Marmo",
+            "categories": {
+                "season": [
+                    "DokiDoki! Pretty Cure"
+                ],
+                "generation": 8,
+                "first_episode": 1,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 66,
+            "name": "Bel",
+            "categories": {
+                "season": [
+                    "DokiDoki! Pretty Cure"
+                ],
+                "generation": 8,
+                "first_episode": 3,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 67,
+            "name": "Regina",
+            "categories": {
+                "season": [
+                    "DokiDoki! Pretty Cure"
+                ],
+                "generation": 8,
+                "first_episode": 13,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 68,
+            "name": "Leva",
+            "categories": {
+                "season": [
+                    "DokiDoki! Pretty Cure"
+                ],
+                "generation": 8,
+                "first_episode": 23,
+                "last_episode": 31,
+                "attack_defeat": "Lovely Straight Flush"
+            },
+            "image": null
+        },
+        {
+            "id": 69,
+            "name": "Gula",
+            "categories": {
+                "season": [
+                    "DokiDoki! Pretty Cure"
+                ],
+                "generation": 8,
+                "first_episode": 23,
+                "last_episode": 31,
+                "attack_defeat": "Lovely Straight Flush"
+            },
+            "image": null
+        },
+        {
+            "id": 70,
+            "name": "Lust",
+            "categories": {
+                "season": [
+                    "DokiDoki! Pretty Cure"
+                ],
+                "generation": 8,
+                "first_episode": 46,
+                "last_episode": 46,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 71,
+            "name": "Goma",
+            "categories": {
+                "season": [
+                    "DokiDoki! Pretty Cure"
+                ],
+                "generation": 8,
+                "first_episode": 46,
+                "last_episode": 46,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 72,
+            "name": "King Jikochuu",
+            "categories": {
+                "season": [
+                    "DokiDoki! Pretty Cure"
+                ],
+                "generation": 8,
+                "first_episode": 1,
+                "last_episode": 48,
+                "attack_defeat": "Royal Lovely Straight Flush"
+            },
+            "image": null
+        },
+        {
+            "id": 73,
+            "name": "Proto Jikochuu",
+            "categories": {
+                "season": [
+                    "DokiDoki! Pretty Cure"
+                ],
+                "generation": 8,
+                "first_episode": 49,
+                "last_episode": 49,
+                "attack_defeat": "My Sweet Heart"
+            },
+            "image": null
+        },
+        {
+            "id": 74,
+            "name": "Namakelder",
+            "categories": {
+                "season": [
+                    "HappinessCharge Pretty Cure!"
+                ],
+                "generation": 9,
+                "first_episode": 1,
+                "last_episode": 49,
+                "attack_defeat": "Princess Windy Wink"
+            },
+            "image": null
+        },
+        {
+            "id": 75,
+            "name": "Hosshiwa",
+            "categories": {
+                "season": [
+                    "HappinessCharge Pretty Cure!"
+                ],
+                "generation": 9,
+                "first_episode": 1,
+                "last_episode": 49,
+                "attack_defeat": "Honey Temptation"
+            },
+            "image": null
+        },
+        {
+            "id": 76,
+            "name": "Oresky",
+            "categories": {
+                "season": [
+                    "HappinessCharge Pretty Cure!"
+                ],
+                "generation": 9,
+                "first_episode": 1,
+                "last_episode": 49,
+                "attack_defeat": "Emerald Illusion"
+            },
+            "image": null
+        },
+        {
+            "id": 77,
+            "name": "Phantom",
+            "categories": {
+                "season": [
+                    "HappinessCharge Pretty Cure!"
+                ],
+                "generation": 9,
+                "first_episode": 1,
+                "last_episode": 49,
+                "attack_defeat": "Innocent Purification"
+            },
+            "image": null
+        },
+        {
+            "id": 78,
+            "name": "Madam Momere",
+            "categories": {
+                "season": [
+                    "HappinessCharge Pretty Cure!"
+                ],
+                "generation": 9,
+                "first_episode": 28,
+                "last_episode": 28,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 79,
+            "name": "Queen Mirage",
+            "categories": {
+                "season": [
+                    "HappinessCharge Pretty Cure!"
+                ],
+                "generation": 9,
+                "first_episode": 1,
+                "last_episode": 44,
+                "attack_defeat": "Innocent Purification"
+            },
+            "image": null
+        },
+        {
+            "id": 80,
+            "name": "Deep Mirror",
+            "categories": {
+                "season": [
+                    "HappinessCharge Pretty Cure!"
+                ],
+                "generation": 9,
+                "first_episode": 2,
+                "last_episode": 49,
+                "attack_defeat": "Forever Lovely"
+            },
+            "image": null
+        },
+        {
+            "id": 81,
+            "name": "Close",
+            "categories": {
+                "season": [
+                    "Go! Princess Pretty Cure"
+                ],
+                "generation": 10,
+                "first_episode": 1,
+                "last_episode": 50,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 82,
+            "name": "Shut",
+            "categories": {
+                "season": [
+                    "Go! Princess Pretty Cure"
+                ],
+                "generation": 10,
+                "first_episode": 10,
+                "last_episode": 50,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 83,
+            "name": "Lock",
+            "categories": {
+                "season": [
+                    "Go! Princess Pretty Cure"
+                ],
+                "generation": 10,
+                "first_episode": 6,
+                "last_episode": 49,
+                "attack_defeat": "Premium Mode Elegant"
+            },
+            "image": null
+        },
+        {
+            "id": 84,
+            "name": "Twilight",
+            "categories": {
+                "season": [
+                    "Go! Princess Pretty Cure"
+                ],
+                "generation": 10,
+                "first_episode": 13,
+                "last_episode": 22,
+                "attack_defeat": "Lys Tourbillon"
+            },
+            "image": null
+        },
+        {
+            "id": 85,
+            "name": "Dyspear",
+            "categories": {
+                "season": [
+                    "Go! Princess Pretty Cure"
+                ],
+                "generation": 10,
+                "first_episode": 2,
+                "last_episode": 49,
+                "attack_defeat": "Grand Liberation"
+            },
+            "image": null
+        },
+        {
+            "id": 86,
+            "name": "Stop",
+            "categories": {
+                "season": [
+                    "Go! Princess Pretty Cure"
+                ],
+                "generation": 10,
+                "first_episode": 31,
+                "last_episode": 50,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 87,
+            "name": "Freeze",
+            "categories": {
+                "season": [
+                    "Go! Princess Pretty Cure"
+                ],
+                "generation": 10,
+                "first_episode": 31,
+                "last_episode": 50,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 88,
+            "name": "Batty",
+            "categories": {
+                "season": [
+                    "Mahou Tsukai Pretty Cure!"
+                ],
+                "generation": 11,
+                "first_episode": 1,
+                "last_episode": 50,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 89,
+            "name": "Dokurokushe",
+            "categories": {
+                "season": [
+                    "Mahou Tsukai Pretty Cure!"
+                ],
+                "generation": 11,
+                "first_episode": 2,
+                "last_episode": 21,
+                "attack_defeat": "Diamond Eternal"
+            },
+            "image": null
+        },
+        {
+            "id": 90,
+            "name": "Yamoh",
+            "categories": {
+                "season": [
+                    "Mahou Tsukai Pretty Cure!"
+                ],
+                "generation": 11,
+                "first_episode": 2,
+                "last_episode": 50,
+                "attack_defeat": "Emerald Reincarnation"
+            },
+            "image": null
+        },
+        {
+            "id": 91,
+            "name": "Gamettsu",
+            "categories": {
+                "season": [
+                    "Mahou Tsukai Pretty Cure!"
+                ],
+                "generation": 11,
+                "first_episode": 4,
+                "last_episode": 50,
+                "attack_defeat": "Ruby Passionale"
+            },
+            "image": null
+        },
+        {
+            "id": 92,
+            "name": "Sparda",
+            "categories": {
+                "season": [
+                    "Mahou Tsukai Pretty Cure!"
+                ],
+                "generation": 11,
+                "first_episode": 6,
+                "last_episode": 50,
+                "attack_defeat": "Sapphire Smartish"
+            },
+            "image": null
+        },
+        {
+            "id": 93,
+            "name": "Labut",
+            "categories": {
+                "season": [
+                    "Mahou Tsukai Pretty Cure!"
+                ],
+                "generation": 11,
+                "first_episode": 26,
+                "last_episode": 49,
+                "attack_defeat": "Extreme Rainbow"
+            },
+            "image": null
+        },
+        {
+            "id": 94,
+            "name": "Shakince",
+            "categories": {
+                "season": [
+                    "Mahou Tsukai Pretty Cure!"
+                ],
+                "generation": 11,
+                "first_episode": 30,
+                "last_episode": 49,
+                "attack_defeat": "Extreme Rainbow"
+            },
+            "image": null
+        },
+        {
+            "id": 95,
+            "name": "Benigyo",
+            "categories": {
+                "season": [
+                    "Mahou Tsukai Pretty Cure!"
+                ],
+                "generation": 11,
+                "first_episode": 30,
+                "last_episode": 49,
+                "attack_defeat": "Extreme Rainbow"
+            },
+            "image": null
+        },
+        {
+            "id": 96,
+            "name": "Orba",
+            "categories": {
+                "season": [
+                    "Mahou Tsukai Pretty Cure!"
+                ],
+                "generation": 11,
+                "first_episode": 36,
+                "last_episode": 49,
+                "attack_defeat": "Extreme Rainbow"
+            },
+            "image": null
+        },
+        {
+            "id": 97,
+            "name": "Deusmast",
+            "categories": {
+                "season": [
+                    "Mahou Tsukai Pretty Cure!"
+                ],
+                "generation": 11,
+                "first_episode": 47,
+                "last_episode": 49,
+                "attack_defeat": "Extreme Rainbow"
+            },
+            "image": null
+        },
+        {
+            "id": 98,
+            "name": "Gummy",
+            "categories": {
+                "season": [
+                    "KiraKira☆Pretty Cure A La Mode"
+                ],
+                "generation": 12,
+                "first_episode": 1,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 99,
+            "name": "Pulupulu",
+            "categories": {
+                "season": [
+                    "KiraKira☆Pretty Cure A La Mode"
+                ],
+                "generation": 12,
+                "first_episode": 2,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 100,
+            "name": "Hotto",
+            "categories": {
+                "season": [
+                    "KiraKira☆Pretty Cure A La Mode"
+                ],
+                "generation": 12,
+                "first_episode": 3,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 101,
+            "name": "Choucrea",
+            "categories": {
+                "season": [
+                    "KiraKira☆Pretty Cure A La Mode"
+                ],
+                "generation": 12,
+                "first_episode": 4,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 102,
+            "name": "Maquillon",
+            "categories": {
+                "season": [
+                    "KiraKira☆Pretty Cure A La Mode"
+                ],
+                "generation": 12,
+                "first_episode": 5,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 103,
+            "name": "Bitard",
+            "categories": {
+                "season": [
+                    "KiraKira☆Pretty Cure A La Mode"
+                ],
+                "generation": 12,
+                "first_episode": 6,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 104,
+            "name": "Fueru",
+            "categories": {
+                "season": [
+                    "KiraKira☆Pretty Cure A La Mode"
+                ],
+                "generation": 12,
+                "first_episode": 7,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 105,
+            "name": "Spongen",
+            "categories": {
+                "season": [
+                    "KiraKira☆Pretty Cure A La Mode"
+                ],
+                "generation": 12,
+                "first_episode": 8,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 106,
+            "name": "Cookacookie",
+            "categories": {
+                "season": [
+                    "KiraKira☆Pretty Cure A La Mode"
+                ],
+                "generation": 12,
+                "first_episode": 9,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 107,
+            "name": "Tarton",
+            "categories": {
+                "season": [
+                    "KiraKira☆Pretty Cure A La Mode"
+                ],
+                "generation": 12,
+                "first_episode": 10,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 108,
+            "name": "Julio",
+            "categories": {
+                "season": [
+                    "KiraKira☆Pretty Cure A La Mode"
+                ],
+                "generation": 12,
+                "first_episode": 11,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 109,
+            "name": "Bibury",
+            "categories": {
+                "season": [
+                    "KiraKira☆Pretty Cure A La Mode"
+                ],
+                "generation": 12,
+                "first_episode": 18,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 110,
+            "name": "Grave",
+            "categories": {
+                "season": [
+                    "KiraKira☆Pretty Cure A La Mode"
+                ],
+                "generation": 12,
+                "first_episode": 24,
+                "last_episode": 40,
+                "attack_defeat": "Fantastic Animale"
+            },
+            "image": null
+        },
+        {
+            "id": 111,
+            "name": "Diable",
+            "categories": {
+                "season": [
+                    "KiraKira☆Pretty Cure A La Mode"
+                ],
+                "generation": 12,
+                "first_episode": 33,
+                "last_episode": 49,
+                "attack_defeat": "Animal Go Round!"
+            },
+            "image": null
+        },
+        {
+            "id": 112,
+            "name": "Elisio",
+            "categories": {
+                "season": [
+                    "KiraKira☆Pretty Cure A La Mode"
+                ],
+                "generation": 12,
+                "first_episode": 24,
+                "last_episode": 49,
+                "attack_defeat": "Fantastic Animale"
+            },
+            "image": null
+        },
+        {
+            "id": 113,
+            "name": "Noir",
+            "categories": {
+                "season": [
+                    "KiraKira☆Pretty Cure A La Mode"
+                ],
+                "generation": 12,
+                "first_episode": 23,
+                "last_episode": 49,
+                "attack_defeat": "Fantastic Animale"
+            },
+            "image": null
+        },
+        {
+            "id": 114,
+            "name": "Charaleet",
+            "categories": {
+                "season": [
+                    "HUGtto! Pretty Cure"
+                ],
+                "generation": 13,
+                "first_episode": 1,
+                "last_episode": 49,
+                "attack_defeat": "Trinity Concert"
+            },
+            "image": null
+        },
+        {
+            "id": 115,
+            "name": "Ruru",
+            "categories": {
+                "season": [
+                    "HUGtto! Pretty Cure"
+                ],
+                "generation": 13,
+                "first_episode": 1,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 116,
+            "name": "Daigan",
+            "categories": {
+                "season": [
+                    "HUGtto! Pretty Cure"
+                ],
+                "generation": 13,
+                "first_episode": 1,
+                "last_episode": 49,
+                "attack_defeat": "Cheerful Attack"
+            },
+            "image": null
+        },
+        {
+            "id": 117,
+            "name": "Papple",
+            "categories": {
+                "season": [
+                    "HUGtto! Pretty Cure"
+                ],
+                "generation": 13,
+                "first_episode": 1,
+                "last_episode": 49,
+                "attack_defeat": "Twin Love Rock Beat"
+            },
+            "image": null
+        },
+        {
+            "id": 118,
+            "name": "Listol",
+            "categories": {
+                "season": [
+                    "HUGtto! Pretty Cure"
+                ],
+                "generation": 13,
+                "first_episode": 1,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 119,
+            "name": "Doctor Traum",
+            "categories": {
+                "season": [
+                    "HUGtto! Pretty Cure"
+                ],
+                "generation": 13,
+                "first_episode": 23,
+                "last_episode": 49,
+                "attack_defeat": "All for You"
+            },
+            "image": null
+        },
+        {
+            "id": 120,
+            "name": "George Kurai",
+            "categories": {
+                "season": [
+                    "HUGtto! Pretty Cure"
+                ],
+                "generation": 13,
+                "first_episode": 1,
+                "last_episode": 49,
+                "attack_defeat": "Tomorrow With Everyone"
+            },
+            "image": null
+        },
+        {
+            "id": 121,
+            "name": "Bicine",
+            "categories": {
+                "season": [
+                    "HUGtto! Pretty Cure"
+                ],
+                "generation": 13,
+                "first_episode": 23,
+                "last_episode": 49,
+                "attack_defeat": "Tomorrow With Everyone"
+            },
+            "image": null
+        },
+        {
+            "id": 122,
+            "name": "Gelos",
+            "categories": {
+                "season": [
+                    "HUGtto! Pretty Cure"
+                ],
+                "generation": 13,
+                "first_episode": 18,
+                "last_episode": 49,
+                "attack_defeat": "Tomorrow With Everyone"
+            },
+            "image": null
+        },
+        {
+            "id": 123,
+            "name": "JinJin",
+            "categories": {
+                "season": [
+                    "HUGtto! Pretty Cure"
+                ],
+                "generation": 13,
+                "first_episode": 23,
+                "last_episode": 49,
+                "attack_defeat": "Cheerful Attack"
+            },
+            "image": null
+        },
+        {
+            "id": 124,
+            "name": "Takumi",
+            "categories": {
+                "season": [
+                    "HUGtto! Pretty Cure"
+                ],
+                "generation": 13,
+                "first_episode": 23,
+                "last_episode": 49,
+                "attack_defeat": "Cheerful Attack"
+            },
+            "image": null
+        },
+        {
+            "id": 125,
+            "name": "Kappard",
+            "categories": {
+                "season": [
+                    "Star☆Twinkle Pretty Cure"
+                ],
+                "generation": 14,
+                "first_episode": 1,
+                "last_episode": 49,
+                "attack_defeat": "Star Twinkle Imagination"
+            },
+            "image": null
+        },
+        {
+            "id": 126,
+            "name": "Tenjo",
+            "categories": {
+                "season": [
+                    "Star☆Twinkle Pretty Cure"
+                ],
+                "generation": 14,
+                "first_episode": 2,
+                "last_episode": 49,
+                "attack_defeat": "Star Twinkle Imagination"
+            },
+            "image": null
+        },
+        {
+            "id": 127,
+            "name": "Garuouga",
+            "categories": {
+                "season": [
+                    "Star☆Twinkle Pretty Cure"
+                ],
+                "generation": 14,
+                "first_episode": 4,
+                "last_episode": 49,
+                "attack_defeat": "Star Twinkle Imagination"
+            },
+            "image": null
+        },
+        {
+            "id": 128,
+            "name": "Aiwarn",
+            "categories": {
+                "season": [
+                    "Star☆Twinkle Pretty Cure"
+                ],
+                "generation": 14,
+                "first_episode": 4,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 129,
+            "name": "Bakenyan",
+            "categories": {
+                "season": [
+                    "Star☆Twinkle Pretty Cure"
+                ],
+                "generation": 14,
+                "first_episode": 4,
+                "last_episode": 38,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 130,
+            "name": "Darknest",
+            "categories": {
+                "season": [
+                    "Star☆Twinkle Pretty Cure"
+                ],
+                "generation": 14,
+                "first_episode": 11,
+                "last_episode": 48,
+                "attack_defeat": "Star Twinkle Imagination"
+            },
+            "image": null
+        },
+        {
+            "id": 131,
+            "name": "Ophiuchus Star Princess",
+            "categories": {
+                "season": [
+                    "Star☆Twinkle Pretty Cure"
+                ],
+                "generation": 14,
+                "first_episode": 46,
+                "last_episode": 48,
+                "attack_defeat": "Star Twinkle Imagination"
+            },
+            "image": null
+        },
+        {
+            "id": 132,
+            "name": "Daruizen",
+            "categories": {
+                "season": [
+                    "Healin' Good♥Pretty Cure"
+                ],
+                "generation": 15,
+                "first_episode": 1,
+                "last_episode": 44,
+                "attack_defeat": "Healing Oasis"
+            },
+            "image": null
+        },
+        {
+            "id": 133,
+            "name": "Guaiwaru",
+            "categories": {
+                "season": [
+                    "Healin' Good♥Pretty Cure"
+                ],
+                "generation": 15,
+                "first_episode": 1,
+                "last_episode": 45,
+                "attack_defeat": "Healing Oasis"
+            },
+            "image": null
+        },
+        {
+            "id": 134,
+            "name": "Shindoine",
+            "categories": {
+                "season": [
+                    "Healin' Good♥Pretty Cure"
+                ],
+                "generation": 15,
+                "first_episode": 1,
+                "last_episode": 45,
+                "attack_defeat": "Healing Oasis"
+            },
+            "image": null
+        },
+        {
+            "id": 135,
+            "name": "King Byogen",
+            "categories": {
+                "season": [
+                    "Healin' Good♥Pretty Cure"
+                ],
+                "generation": 15,
+                "first_episode": 1,
+                "last_episode": 45,
+                "attack_defeat": "Healing Oasis"
+            },
+            "image": null
+        },
+        {
+            "id": 136,
+            "name": "Batetemoda",
+            "categories": {
+                "season": [
+                    "Healin' Good♥Pretty Cure"
+                ],
+                "generation": 15,
+                "first_episode": 18,
+                "last_episode": 21,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 137,
+            "name": "Witch of Delays",
+            "categories": {
+                "season": [
+                    "Tropical-Rouge! Pretty Cure"
+                ],
+                "generation": 16,
+                "first_episode": 1,
+                "last_episode": 45,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 138,
+            "name": "Butler",
+            "categories": {
+                "season": [
+                    "Tropical-Rouge! Pretty Cure"
+                ],
+                "generation": 16,
+                "first_episode": 1,
+                "last_episode": 46,
+                "attack_defeat": "Super Tropical Paradise"
+            },
+            "image": null
+        },
+        {
+            "id": 139,
+            "name": "Chongire",
+            "categories": {
+                "season": [
+                    "Tropical-Rouge! Pretty Cure"
+                ],
+                "generation": 16,
+                "first_episode": 1,
+                "last_episode": 46,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 140,
+            "name": "Numeri",
+            "categories": {
+                "season": [
+                    "Tropical-Rouge! Pretty Cure"
+                ],
+                "generation": 16,
+                "first_episode": 4,
+                "last_episode": 46,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 141,
+            "name": "Elda",
+            "categories": {
+                "season": [
+                    "Tropical-Rouge! Pretty Cure"
+                ],
+                "generation": 16,
+                "first_episode": 6,
+                "last_episode": 46,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 142,
+            "name": "Gentlu",
+            "categories": {
+                "season": [
+                    "Delicious Party♡Pretty Cure"
+                ],
+                "generation": 17,
+                "first_episode": 1,
+                "last_episode": 12,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 143,
+            "name": "Narcistoru",
+            "categories": {
+                "season": [
+                    "Delicious Party♡Pretty Cure"
+                ],
+                "generation": 17,
+                "first_episode": 1,
+                "last_episode": 45,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 144,
+            "name": "Secretoru",
+            "categories": {
+                "season": [
+                    "Delicious Party♡Pretty Cure"
+                ],
+                "generation": 17,
+                "first_episode": 1,
+                "last_episode": 45,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 145,
+            "name": "Spiritoru",
+            "categories": {
+                "season": [
+                    "Delicious Party♡Pretty Cure"
+                ],
+                "generation": 17,
+                "first_episode": 25,
+                "last_episode": 45,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 146,
+            "name": "Godatz",
+            "categories": {
+                "season": [
+                    "Delicious Party♡Pretty Cure"
+                ],
+                "generation": 17,
+                "first_episode": 2,
+                "last_episode": 45,
+                "attack_defeat": "Delicious Party♡Precious Finale"
+            },
+            "image": null
+        },
+        {
+            "id": 147,
+            "name": "Kabaton",
+            "categories": {
+                "season": [
+                    "Hirogaru Sky! Pretty Cure"
+                ],
+                "generation": 18,
+                "first_episode": 1,
+                "last_episode": 50,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 148,
+            "name": "Empress Undergu",
+            "categories": {
+                "season": [
+                    "Hirogaru Sky! Pretty Cure"
+                ],
+                "generation": 18,
+                "first_episode": 5,
+                "last_episode": 50,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 149,
+            "name": "Battamonda",
+            "categories": {
+                "season": [
+                    "Hirogaru Sky! Pretty Cure"
+                ],
+                "generation": 18,
+                "first_episode": 14,
+                "last_episode": 50,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 150,
+            "name": "Minoton",
+            "categories": {
+                "season": [
+                    "Hirogaru Sky! Pretty Cure"
+                ],
+                "generation": 18,
+                "first_episode": 25,
+                "last_episode": 50,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 151,
+            "name": "Skearhead",
+            "categories": {
+                "season": [
+                    "Hirogaru Sky! Pretty Cure"
+                ],
+                "generation": 18,
+                "first_episode": 31,
+                "last_episode": 50,
+                "attack_defeat": "Updraft Shining"
+            },
+            "image": null
+        },
+        {
+            "id": 152,
+            "name": "Emperor Undergu",
+            "categories": {
+                "season": [
+                    "Hirogaru Sky! Pretty Cure"
+                ],
+                "generation": 18,
+                "first_episode": 44,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 153,
+            "name": "Darkhead",
+            "categories": {
+                "season": [
+                    "Hirogaru Sky! Pretty Cure"
+                ],
+                "generation": 18,
+                "first_episode": 49,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 154,
+            "name": "Gaou",
+            "categories": {
+                "season": [
+                    "Wonderful Pretty Cure!"
+                ],
+                "generation": 19,
+                "first_episode": 7,
+                "last_episode": 50,
+                "attack_defeat": "Eternal Kizuna Shower"
+            },
+            "image": null
+        },
+        {
+            "id": 155,
+            "name": "Torame",
+            "categories": {
+                "season": [
+                    "Wonderful Pretty Cure!"
+                ],
+                "generation": 19,
+                "first_episode": 29,
+                "last_episode": 50,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 156,
+            "name": "Zakuro",
+            "categories": {
+                "season": [
+                    "Wonderful Pretty Cure!"
+                ],
+                "generation": 19,
+                "first_episode": 29,
+                "last_episode": 50,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 157,
+            "name": "Cutty",
+            "categories": {
+                "season": [
+                    "Kimi to Idol Pretty Cure♪"
+                ],
+                "generation": 20,
+                "first_episode": 1,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 158,
+            "name": "Zakkuri",
+            "categories": {
+                "season": [
+                    "Kimi to Idol Pretty Cure♪"
+                ],
+                "generation": 20,
+                "first_episode": 3,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 159,
+            "name": "Chokkirine",
+            "categories": {
+                "season": [
+                    "Kimi to Idol Pretty Cure♪"
+                ],
+                "generation": 20,
+                "first_episode": 5,
+                "last_episode": 49,
+                "attack_defeat": "High Emotion"
+            },
+            "image": null
+        },
+        {
+            "id": 160,
+            "name": "Jogi",
+            "categories": {
+                "season": [
+                    "Kimi to Idol Pretty Cure♪"
+                ],
+                "generation": 20,
+                "first_episode": 30,
+                "last_episode": 49,
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 161,
+            "name": "Darkine",
+            "categories": {
+                "season": [
+                    "Kimi to Idol Pretty Cure♪"
+                ],
+                "generation": 20,
+                "first_episode": 1,
+                "last_episode": 49,
+                "attack_defeat": "Sing a Ribbon With You"
+            },
+            "image": null
+        },
+        {
+            "id": 162,
+            "name": "Dark Witch",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure Max Heart"
+                ],
+                "generation": 1,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "Marble Screw Max Spark"
+            },
+            "image": null
+        },
+        {
+            "id": 163,
+            "name": "Freezen",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure Max Heart"
+                ],
+                "generation": 1,
+                "first_episode": "movie 2",
+                "last_episode": "movie 2",
+                "attack_defeat": "Extreme Luminario"
+            },
+            "image": null
+        },
+        {
+            "id": 164,
+            "name": "Frozen",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure Max Heart"
+                ],
+                "generation": 1,
+                "first_episode": "movie 2",
+                "last_episode": "movie 2",
+                "attack_defeat": "Extreme Luminario"
+            },
+            "image": null
+        },
+        {
+            "id": 165,
+            "name": "Sirloin",
+            "categories": {
+                "season": [
+                    "Futari wa Pretty Cure Splash☆Star"
+                ],
+                "generation": 2,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "Spiral Star Splash"
+            },
+            "image": null
+        },
+        {
+            "id": 166,
+            "name": "Shadow",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5"
+                ],
+                "generation": 3,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "Five Explosion"
+            },
+            "image": null
+        },
+        {
+            "id": 167,
+            "name": "Mushiban",
+            "categories": {
+                "season": [
+                    "Yes! Pretty Cure 5 GoGo!"
+                ],
+                "generation": 3,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "Starlight Solution"
+            },
+            "image": null
+        },
+        {
+            "id": 168,
+            "name": "Toymajin",
+            "categories": {
+                "season": [
+                    "Fresh Pretty Cure!"
+                ],
+                "generation": 4,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "Loving True Heart Fresh"
+            },
+            "image": null
+        },
+        {
+            "id": 169,
+            "name": "Baron Salamander",
+            "categories": {
+                "season": [
+                    "HeartCatch Pretty Cure!"
+                ],
+                "generation": 5,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "Heartcatch Orchestra"
+            },
+            "image": null
+        },
+        {
+            "id": 170,
+            "name": "Howling",
+            "categories": {
+                "season": [
+                    "Suite Pretty Cure♪"
+                ],
+                "generation": 6,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "Suite Session Ensemble Crescendo"
+            },
+            "image": null
+        },
+        {
+            "id": 171,
+            "name": "Demon King",
+            "categories": {
+                "season": [
+                    "Smile Pretty Cure!"
+                ],
+                "generation": 7,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "Ultra Cure Happy"
+            },
+            "image": null
+        },
+        {
+            "id": 172,
+            "name": "Marsh",
+            "categories": {
+                "season": [
+                    "DokiDoki! Pretty Cure"
+                ],
+                "generation": 8,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 173,
+            "name": "Clarinet",
+            "categories": {
+                "season": [
+                    "DokiDoki! Pretty Cure"
+                ],
+                "generation": 8,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "Pretty Cure Love Heart Arrow"
+            },
+            "image": null
+        },
+        {
+            "id": 174,
+            "name": "Black Fang",
+            "categories": {
+                "season": [
+                    "HappinessCharge Pretty Cure!"
+                ],
+                "generation": 9,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "Miracle Love Motion"
+            },
+            "image": null
+        },
+        {
+            "id": 175,
+            "name": "Warp",
+            "categories": {
+                "season": [
+                    "Go! Princess Pretty Cure"
+                ],
+                "generation": 10,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "Halloween Eclair"
+            },
+            "image": null
+        },
+        {
+            "id": 176,
+            "name": "Night Pumpkin",
+            "categories": {
+                "season": [
+                    "Go! Princess Pretty Cure"
+                ],
+                "generation": 10,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 177,
+            "name": "Dark Magic",
+            "categories": {
+                "season": [
+                    "Mahou Tsukai Pretty Cure!"
+                ],
+                "generation": 11,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 178,
+            "name": "Kumata / Dark Matter",
+            "categories": {
+                "season": [
+                    "Mahou Tsukai Pretty Cure!"
+                ],
+                "generation": 11,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 179,
+            "name": "Cook",
+            "categories": {
+                "season": [
+                    "KiraKira☆Pretty Cure A La Mode"
+                ],
+                "generation": 12,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "Animal Memoir"
+            },
+            "image": null
+        },
+        {
+            "id": 180,
+            "name": "Gyro III",
+            "categories": {
+                "season": [
+                    "Star☆Twinkle Pretty Cure"
+                ],
+                "generation": 14,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 181,
+            "name": "Hydro",
+            "categories": {
+                "season": [
+                    "Star☆Twinkle Pretty Cure"
+                ],
+                "generation": 14,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 182,
+            "name": "Burn",
+            "categories": {
+                "season": [
+                    "Star☆Twinkle Pretty Cure"
+                ],
+                "generation": 14,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 183,
+            "name": "Dive",
+            "categories": {
+                "season": [
+                    "Star☆Twinkle Pretty Cure"
+                ],
+                "generation": 14,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 184,
+            "name": "Chop",
+            "categories": {
+                "season": [
+                    "Star☆Twinkle Pretty Cure"
+                ],
+                "generation": 14,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 185,
+            "name": "Refrain",
+            "categories": {
+                "season": [
+                    "Healin' Good♥Pretty Cure"
+                ],
+                "generation": 15,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "Healing Time Liberation"
+            },
+            "image": null
+        },
+        {
+            "id": 186,
+            "name": "Ego Ego",
+            "categories": {
+                "season": [
+                    "Healin' Good♥Pretty Cure"
+                ],
+                "generation": 15,
+                "first_episode": "movie 2",
+                "last_episode": "movie 2",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 187,
+            "name": "Sharon",
+            "categories": {
+                "season": [
+                    "Tropical-Rouge! Pretty Cure"
+                ],
+                "generation": 16,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 188,
+            "name": "Cait Sith",
+            "categories": {
+                "season": [
+                    "Delicious Party♡Pretty Cure"
+                ],
+                "generation": 17,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 189,
+            "name": "Mujina",
+            "categories": {
+                "season": [
+                    "Wonderful Pretty Cure!"
+                ],
+                "generation": 19,
+                "first_episode": "movie 1",
+                "last_episode": "movie 1",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 190,
+            "name": "Fusion",
+            "categories": {
+                "season": [
+                    "all star"
+                ],
+                "generation": 4,
+                "first_episode": "Pretty Cure All Stars DX",
+                "last_episode": "New Stage 1",
+                "attack_defeat": "Pretty Cure All Stars DX"
+            },
+            "image": null
+        },
+        {
+            "id": 191,
+            "name": "Bottom",
+            "categories": {
+                "season": [
+                    "all star"
+                ],
+                "generation": 5,
+                "first_episode": "Pretty Cure All Stars DX2",
+                "last_episode": "Pretty Cure All Stars DX2",
+                "attack_defeat": "Pretty Cure All Stars DX2"
+            },
+            "image": null
+        },
+        {
+            "id": 192,
+            "name": "Black Hole",
+            "categories": {
+                "season": [
+                    "all star"
+                ],
+                "generation": 6,
+                "first_episode": "Pretty Cure All Stars DX3",
+                "last_episode": "Pretty Cure All Stars DX3",
+                "attack_defeat": "Pretty Cure All Stars DX3"
+            },
+            "image": null
+        },
+        {
+            "id": 193,
+            "name": "Kage",
+            "categories": {
+                "season": [
+                    "all star"
+                ],
+                "generation": 8,
+                "first_episode": "Pretty Cure All Stars New Stage 2: Kokoro no Tomodachi",
+                "last_episode": "Pretty Cure All Stars New Stage 2: Kokoro no Tomodachi",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 194,
+            "name": "Maamu",
+            "categories": {
+                "season": [
+                    "all star"
+                ],
+                "generation": 9,
+                "first_episode": "Pretty Cure All Stars New Stage 3: Eien no Tomodachi",
+                "last_episode": "Pretty Cure All Stars New Stage 3: Eien no Tomodachi",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 195,
+            "name": "Odoren",
+            "categories": {
+                "season": [
+                    "all star"
+                ],
+                "generation": 9,
+                "first_episode": "Pretty Cure All Stars: Haru no Carnival♪",
+                "last_episode": "Pretty Cure All Stars: Haru no Carnival♪",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 196,
+            "name": "Utaen",
+            "categories": {
+                "season": [
+                    "all star"
+                ],
+                "generation": 9,
+                "first_episode": "Pretty Cure All Stars: Haru no Carnival♪",
+                "last_episode": "Pretty Cure All Stars: Haru no Carnival♪",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 197,
+            "name": "Solcière",
+            "categories": {
+                "season": [
+                    "all star"
+                ],
+                "generation": 11,
+                "first_episode": "Pretty Cure All Stars: Minna de Utau♪ Kiseki no Mahou!",
+                "last_episode": "Pretty Cure All Stars: Minna de Utau♪ Kiseki no Mahou!",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 198,
+            "name": "Trauuma",
+            "categories": {
+                "season": [
+                    "all star"
+                ],
+                "generation": 11,
+                "first_episode": "Pretty Cure All Stars: Minna de Utau♪ Kiseki no Mahou!",
+                "last_episode": "Pretty Cure All Stars: Minna de Utau♪ Kiseki no Mahou!",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 199,
+            "name": "Karasu Tengu",
+            "categories": {
+                "season": [
+                    "all star"
+                ],
+                "generation": 12,
+                "first_episode": "Pretty Cure Dream Stars!",
+                "last_episode": "Pretty Cure Dream Stars!",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 200,
+            "name": "Dark Onibi",
+            "categories": {
+                "season": [
+                    "all star"
+                ],
+                "generation": 13,
+                "first_episode": "Pretty Cure Super Stars!",
+                "last_episode": "Pretty Cure Super Stars!",
+                "attack_defeat": "Pretty Cure Super Stars!"
+            },
+            "image": null
+        },
+        {
+            "id": 201,
+            "name": "Miden",
+            "categories": {
+                "season": [
+                    "all star"
+                ],
+                "generation": 13,
+                "first_episode": "Pretty Cure All Stars Memories",
+                "last_episode": "Pretty Cure All Stars Memories",
+                "attack_defeat": "Pretty Cure All Stars Memories"
+            },
+            "image": null
+        },
+        {
+            "id": 202,
+            "name": "Yango",
+            "categories": {
+                "season": [
+                    "all star"
+                ],
+                "generation": 14,
+                "first_episode": "Pretty Cure Miracle Universe",
+                "last_episode": "Pretty Cure Miracle Universe",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 203,
+            "name": "Supreme",
+            "categories": {
+                "season": [
+                    "all star"
+                ],
+                "generation": 18,
+                "first_episode": "Pretty Cure All Stars F",
+                "last_episode": "Pretty Cure All Stars F",
+                "attack_defeat": "—"
+            },
+            "image": null
+        },
+        {
+            "id": 204,
+            "name": "Arc",
+            "categories": {
+                "season": [
+                    "all star"
+                ],
+                "generation": 18,
+                "first_episode": "Pretty Cure All Stars F",
+                "last_episode": "Pretty Cure All Stars F",
+                "attack_defeat": "—"
+            },
+            "image": null
+        }
+    ]
+}

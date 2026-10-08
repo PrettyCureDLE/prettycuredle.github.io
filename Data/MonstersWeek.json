@@ -1,0 +1,16 @@
+{
+    "monstersweek": [
+        {
+            "id": 1,
+            "possessing": "Roller Coaster",
+            "categories": {
+                "summoner": [],
+                "type": "Zakenna",
+                "generation": 1,
+                "episode": null,
+                "attack_defeat": null
+            },
+            "image": null
+        }
+    ]
+}

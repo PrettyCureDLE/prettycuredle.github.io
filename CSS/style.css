@@ -253,17 +253,7 @@ body {
 .results-header,
 .guess-row {
     display: grid;
-
-    grid-template-columns:
-        1.2fr
-        1fr
-        1.2fr
-        1.2fr
-        1.2fr
-        1.2fr
-        1.2fr
-        0.8fr;
-
+    grid-template-columns: var(--results-grid-columns, 80px repeat(7, 1fr));
     gap: 5px;
 }
 
@@ -317,6 +307,37 @@ body {
     max-width: 100px;
     max-height: 100px;
     object-fit: contain;
+}
+
+.image-placeholder {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.image-missing {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+
+/* ============================================================
+   ICÔNE D'INFO (EN-TÊTES)
+   ============================================================ */
+
+.info-icon {
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 12px;
+    opacity: 0.8;
+    cursor: help;
 }
 
 

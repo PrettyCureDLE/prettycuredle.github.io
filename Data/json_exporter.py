@@ -130,6 +130,115 @@ def export_films(sheet):
         "films": films
     }
 
+def export_enemies(sheet):
+    enemies = []
+
+    # Première ligne = noms des colonnes
+    headers = [
+        cell.value
+        for cell in sheet[1]
+    ]
+
+    # Parcours des personnages
+    for row in sheet.iter_rows(min_row=2, values_only=True):
+
+        # Ignore les lignes complètement vides
+        if not any(value is not None for value in row):
+            continue
+
+        data = dict(zip(headers, row))
+
+        character = {
+            "id": clean_value(data.get("Value.id")),
+            "name": clean_value(data.get("Value.name")),
+
+            "categories": {
+                "season": split_values(
+                    data.get("Value.categories.season")
+                ),
+
+                "generation": clean_value(
+                    data.get("Value.categories.generation")
+                ),
+
+                "first_episode": clean_value(
+                    data.get("Value.categories.first_episode")
+                ),
+
+                "last_episode": clean_value(
+                    data.get("Value.categories.last_episode")
+                ),
+
+                "attack_defeat": clean_value(
+                    data.get("Value.categories.attack_defeat")
+                )
+            },
+
+            "image": clean_value(
+                data.get("Value.image")
+            )
+        }
+
+        enemies.append(character)
+
+    return {
+        "enemies": enemies
+    }
+
+def export_monstersweek(sheet):
+    monstersweek = []
+
+    # Première ligne = noms des colonnes
+    headers = [
+        cell.value
+        for cell in sheet[1]
+    ]
+
+    # Parcours des personnages
+    for row in sheet.iter_rows(min_row=2, values_only=True):
+
+        # Ignore les lignes complètement vides
+        if not any(value is not None for value in row):
+            continue
+
+        data = dict(zip(headers, row))
+
+        character = {
+            "id": clean_value(data.get("Value.id")),
+            "possessing": clean_value(data.get("Value.possessing")),
+
+            "categories": {
+                "summoner": split_values(
+                    data.get("Value.categories.summoner")
+                ),
+
+                "type": clean_value(
+                    data.get("Value.categories.type")
+                ),
+
+                "generation": clean_value(
+                    data.get("Value.categories.generation")
+                ),
+
+                "episode": clean_value(
+                    data.get("Value.categories.episode")
+                ),
+
+                "attack_defeat": clean_value(
+                    data.get("Value.categories.attack_defeat")
+                )
+            },
+
+            "image": clean_value(
+                data.get("Value.image")
+            )
+        }
+
+        monstersweek.append(character)
+
+    return {
+        "monstersweek": monstersweek
+    }
 
 def save_json(data, filename, folder):
     path = os.path.join(folder, filename)
@@ -200,9 +309,13 @@ def generate_json():
 
         cures_sheet = workbook["Cures"]
         films_sheet = workbook["Films"]
+        enemies_sheet = workbook["Enemies"]
+        monstersweek_sheet = workbook["MonstersWeek"]
 
         cures_data = export_cures(cures_sheet)
         films_data = export_films(films_sheet)
+        enemies_data = export_enemies(enemies_sheet)
+        monstersweek_data = export_monstersweek(monstersweek_sheet)
 
         # Les JSON sont créés dans le même dossier que le XLSX
         folder = os.path.dirname(path)
@@ -218,12 +331,26 @@ def generate_json():
             "Films.json",
             folder
         )
+        
+        enemies_path = save_json(
+            enemies_data,
+            "Enemies.json",
+            folder
+        )
+        
+        monstersweek_path = save_json(
+            monstersweek_data,
+            "MonstersWeek.json",
+            folder
+        )
 
         messagebox.showinfo(
             "Export terminé",
             "Les fichiers ont été générés avec succès !\n\n"
             "Cures.json\n"
-            "Films.json\n\n"
+            "Films.json\n"
+            "Enemies.json\n"
+            "MonstersWeek.json\n\n"
             f"Dossier :\n{folder}"
         )
 
